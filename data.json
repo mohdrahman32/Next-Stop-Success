@@ -1,0 +1,1168 @@
+{
+    "USA": {
+        "Level-1": [
+            {
+                "universityName": "Harvard University",
+                "logo": "universities/harvard.jpg",
+                "location": "Cambridge, MA",
+                "overview": "Harvard is one of the most prestigious universities in the world, offering top-notch master's programs across various fields.",
+                "topMastersPrograms": [
+                    "Computer Science",
+                    "Business Administration",
+                    "Law"
+                ],
+                "accreditation": "Top-ranked globally",
+                "tuitionFees": "$50,000/year",
+                "livingExpenses": "$20,000/year",
+                "admissionRequirements": {
+                    "GPA": "3.8+",
+                    "languageProficiency": "TOEFL 100+",
+                    "tests": "GRE/GMAT"
+                },
+                "scholarships": "Merit-based scholarships available",
+                "campusLife": "Active student life with research centers and clubs",
+                "workOpportunities": "Internships, post-graduation work permits",
+                "internationalSupport": "Visa assistance, orientation",
+                "applicationDeadlines": "December 15",
+                "callToAction": "https://www.harvard.edu"
+            },
+            {
+                "universityName": "Stanford University",
+                "logo": "universities/stanford.jpg",
+                "location": "Stanford, CA",
+                "overview": "Stanford is a leading research university with a global impact, known for its strong master's programs in STEM and business fields.",
+                "topMastersPrograms": [
+                    "Engineering",
+                    "Business Administration",
+                    "Law"
+                ],
+                "accreditation": "Globally recognized top-tier university",
+                "tuitionFees": "$55,000/year",
+                "livingExpenses": "$22,000/year",
+                "admissionRequirements": {
+                    "GPA": "3.7+",
+                    "languageProficiency": "TOEFL 100+",
+                    "tests": "GRE/GMAT"
+                },
+                "scholarships": "Merit-based and need-based scholarships",
+                "campusLife": "Vibrant campus with tech innovations and global networking",
+                "workOpportunities": "Internships, part-time work options",
+                "internationalSupport": "Orientation and visa services for international students",
+                "applicationDeadlines": "January 5",
+                "callToAction": "https://www.stanford.edu"
+            },
+            {
+                "universityName": "Massachusetts Institute of Technology (MIT)",
+                "logo": "universities/mit.jpg",
+                "location": "Cambridge, MA",
+                "overview": "MIT is a world-renowned institution dedicated to advancing knowledge and innovation, offering exceptional master's programs in technology, science, and business.",
+                "topMastersPrograms": [
+                    "Computer Science",
+                    "Mechanical Engineering",
+                    "Data Science"
+                ],
+                "accreditation": "Globally recognized top-tier university",
+                "tuitionFees": "$57,000/year",
+                "livingExpenses": "$20,000/year",
+                "admissionRequirements": {
+                    "GPA": "3.8+",
+                    "languageProficiency": "TOEFL 105+",
+                    "tests": "GRE/GMAT (as applicable)"
+                },
+                "scholarships": "Merit-based scholarships, fellowships, and financial aid",
+                "campusLife": "Dynamic campus with cutting-edge research and diverse student community",
+                "workOpportunities": "Research assistantships, internships, and part-time work options",
+                "internationalSupport": "Dedicated international student office and visa support",
+                "applicationDeadlines": "December 15",
+                "callToAction": "https://www.mit.edu"
+            }
+            
+        ],
+        "Level-2": [
+            {
+                "universityName": "University of California, Berkeley",
+                "logo": "universities/california.jpg",
+                "location": "Berkeley, CA",
+                "overview": "UC Berkeley is renowned for its research-driven approach and offers diverse programs at a moderate level of prestige.",
+                "topMastersPrograms": [
+                    "Public Health",
+                    "Computer Science",
+                    "Environmental Science"
+                ],
+                "accreditation": "Accredited and well-ranked",
+                "tuitionFees": "$40,000/year",
+                "livingExpenses": "$18,000/year",
+                "admissionRequirements": {
+                    "GPA": "3.5+",
+                    "languageProficiency": "TOEFL 85+",
+                    "tests": "GRE/GMAT"
+                },
+                "scholarships": "Available for international students based on merit",
+                "campusLife": "Student organizations and research initiatives",
+                "workOpportunities": "Internships and work-study options",
+                "internationalSupport": "Visa support and international student office",
+                "applicationDeadlines": "December 1",
+                "callToAction": "https://www.berkeley.edu"
+            },
+            {
+                "universityName": "University of Illinois at Chicago (UIC)",
+                "logo": "universities/uic.jpg",
+                "location": "Chicago, IL",
+                "overview": "UIC is a diverse public research university offering quality education and practical training across a range of disciplines.",
+                "topMastersPrograms": [
+                    "Computer Science",
+                    "Public Health",
+                    "Mechanical Engineering"
+                ],
+                "accreditation": "Regionally accredited by the Higher Learning Commission",
+                "tuitionFees": "$30,000/year",
+                "livingExpenses": "$18,000/year",
+                "admissionRequirements": {
+                    "GPA": "3.0+",
+                    "languageProficiency": "TOEFL 80+ or IELTS 6.5+",
+                    "tests": "GRE (optional for some programs)"
+                },
+                "scholarships": "Merit-based scholarships and assistantships",
+                "campusLife": "Urban campus with cultural diversity and vibrant student activities",
+                "workOpportunities": "Part-time jobs, internships, and co-op programs",
+                "internationalSupport": "International student office and cultural programs",
+                "applicationDeadlines": "February 15",
+                "callToAction": "https://www.uic.edu"
+            },
+            {
+                "universityName": "San Jose State University (SJSU)",
+                "logo": "universities/sjsu.jpg",
+                "location": "San Jose, CA",
+                "overview": "Located in the heart of Silicon Valley, SJSU offers affordable master's programs with industry connections and hands-on learning.",
+                "topMastersPrograms": [
+                    "Software Engineering",
+                    "Data Analytics",
+                    "Business Administration (MBA)"
+                ],
+                "accreditation": "Accredited by the Western Association of Schools and Colleges (WASC)",
+                "tuitionFees": "$20,000/year",
+                "livingExpenses": "$16,000/year",
+                "admissionRequirements": {
+                    "GPA": "2.75+",
+                    "languageProficiency": "TOEFL 80+ or IELTS 6.5+",
+                    "tests": "GRE/GMAT (depending on the program)"
+                },
+                "scholarships": "Limited merit-based scholarships and graduate assistantships",
+                "campusLife": "Dynamic campus with tech industry proximity and student organizations",
+                "workOpportunities": "Internships and part-time work in Silicon Valley",
+                "internationalSupport": "Orientation, visa support, and cultural events for international students",
+                "applicationDeadlines": "March 1",
+                "callToAction": "https://www.sjsu.edu"
+            }
+        ],
+        "Level-3": [
+            {
+                "universityName": "San Diego State University",
+                "logo": "universities/sdsu.jpg",
+                "location": "San Diego, CA",
+                "overview": "San Diego State offers a range of master's programs at an affordable cost, suitable for students seeking a solid education.",
+                "topMastersPrograms": [
+                    "Public Administration",
+                    "Marketing",
+                    "Sociology"
+                ],
+                "accreditation": "Accredited with regional recognition",
+                "tuitionFees": "$30,000/year",
+                "livingExpenses": "$15,000/year",
+                "admissionRequirements": {
+                    "GPA": "3.0+",
+                    "languageProficiency": "TOEFL 80+",
+                    "tests": "GRE optional"
+                },
+                "scholarships": "Some merit-based scholarships available",
+                "campusLife": "Active campus life with local networking opportunities",
+                "workOpportunities": "Internships and local work opportunities",
+                "internationalSupport": "Visa assistance for international students",
+                "applicationDeadlines": "November 15",
+                "callToAction": "https://www.sdsu.edu"
+            },
+            {
+                "universityName": "University of Louisiana at Lafayette (UL Lafayette)",
+                "logo": "universities/louisiana.jpg",
+                "location": "Lafayette, LA",
+                "overview": "UL Lafayette offers affordable master's programs with a focus on regional and practical needs, fostering a supportive academic environment.",
+                "topMastersPrograms": [
+                    "Environmental Science",
+                    "Education",
+                    "Computer Science"
+                ],
+                "accreditation": "Accredited by the Southern Association of Colleges and Schools Commission on Colleges (SACSCOC)",
+                "tuitionFees": "$15,000/year",
+                "livingExpenses": "$12,000/year",
+                "admissionRequirements": {
+                    "GPA": "2.5+",
+                    "languageProficiency": "TOEFL 71+ or IELTS 6.0+",
+                    "tests": "GRE (may be waived for some programs)"
+                },
+                "scholarships": "Limited need-based and merit-based scholarships",
+                "campusLife": "Close-knit campus with cultural activities and student support services",
+                "workOpportunities": "On-campus employment and local internships",
+                "internationalSupport": "Dedicated international student office and visa assistance",
+                "applicationDeadlines": "April 15",
+                "callToAction": "https://www.louisiana.edu"
+            },
+            {
+                "universityName": "Arkansas State University (A-State)",
+                "logo": "universities/arkansas.jpg",
+                "location": "Jonesboro, AR",
+                "overview": "A-State offers affordable education and personalized support for students pursuing master's programs in a variety of fields.",
+                "topMastersPrograms": [
+                    "Agriculture",
+                    "Nursing",
+                    "Engineering Management"
+                ],
+                "accreditation": "Accredited by the Higher Learning Commission",
+                "tuitionFees": "$13,000/year",
+                "livingExpenses": "$10,000/year",
+                "admissionRequirements": {
+                    "GPA": "2.75+",
+                    "languageProficiency": "TOEFL 61+ or IELTS 5.5+",
+                    "tests": "GRE/GMAT (not required for some programs)"
+                },
+                "scholarships": "Graduate assistantships and merit-based awards",
+                "campusLife": "Small campus with a friendly community and student clubs",
+                "workOpportunities": "Part-time jobs on campus and internships",
+                "internationalSupport": "Orientation programs and immigration services",
+                "applicationDeadlines": "May 1",
+                "callToAction": "https://www.astate.edu"
+            }
+        ]
+    },
+    "UK": {
+        "Level-1": [
+            {
+                "universityName": "University of Oxford",
+                "logo": "universities/oxford.webp",
+                "location": "Oxford, England",
+                "overview": "Oxford University is one of the oldest and most prestigious institutions, known for its rigorous master's programs.",
+                "topMastersPrograms": [
+                    "Philosophy",
+                    "Law",
+                    "Engineering"
+                ],
+                "accreditation": "Top-ranked globally",
+                "tuitionFees": "30,000/year",
+                "livingExpenses": "12,000/year",
+                "admissionRequirements": {
+                    "GPA": "First-class honours degree",
+                    "languageProficiency": "IELTS 7.5+",
+                    "tests": "GRE/GMAT may be required"
+                },
+                "scholarships": "Available for international students",
+                "campusLife": "Rich campus life with various societies and traditions",
+                "workOpportunities": "Post-graduation work opportunities",
+                "internationalSupport": "Visa support and international student services",
+                "applicationDeadlines": "January 10",
+                "callToAction": "https://www.ox.ac.uk"
+            },
+            {
+                "universityName": "University of Cambridge",
+                "logo": "universities/cambridge.jpg",
+                "location": "Cambridge, England",
+                "overview": "Cambridge is a world-renowned university with a rich history of academic excellence, offering top programs in science, technology, engineering, and the arts.",
+                "topMastersPrograms": [
+                    "Computer Science",
+                    "Engineering",
+                    "Mathematics"
+                ],
+                "accreditation": "Globally recognized, consistently ranked among the best",
+                "tuitionFees": "£32,000/year",
+                "livingExpenses": "£16,000/year",
+                "admissionRequirements": {
+                    "GPA": "3.8+",
+                    "languageProficiency": "IELTS 7.5+",
+                    "tests": "GRE (as applicable)"
+                },
+                "scholarships": "Full and partial scholarships available for international students",
+                "campusLife": "Vibrant university life with academic and extracurricular activities, research centers",
+                "workOpportunities": "Internships, academic assistantships, and part-time jobs",
+                "internationalSupport": "Visa support and orientation for international students",
+                "applicationDeadlines": "December 1",
+                "callToAction": "https://www.cam.ac.uk"
+            },
+            {
+                "universityName": "Imperial College London",
+                "logo": "universities/imperial.jpg",
+                "location": "London, England",
+                "overview": "Imperial College London is a leading global institution focusing on science, engineering, medicine, and business, offering cutting-edge master's programs in these fields.",
+                "topMastersPrograms": [
+                    "Mechanical Engineering",
+                    "Data Science",
+                    "Business Administration"
+                ],
+                "accreditation": "Top-ranked in engineering and technology globally",
+                "tuitionFees": "£35,000/year",
+                "livingExpenses": "£18,000/year",
+                "admissionRequirements": {
+                    "GPA": "3.7+",
+                    "languageProficiency": "IELTS 7.0+",
+                    "tests": "GRE (for certain programs)"
+                },
+                "scholarships": "Merit-based scholarships and financial aid available",
+                "campusLife": "Thriving campus with a strong focus on innovation, research, and student-led projects",
+                "workOpportunities": "Internships, research assistantships, part-time jobs",
+                "internationalSupport": "Dedicated international student office with visa and orientation services",
+                "applicationDeadlines": "January 5",
+                "callToAction": "https://www.imperial.ac.uk"
+            }
+        ],
+        "Level-2": [
+            {
+                "universityName": "University of Manchester",
+                "logo": "universities/manchester.jpg",
+                "location": "Manchester, England",
+                "overview": "University of Manchester offers a wide range of postgraduate programs with a solid reputation for research.",
+                "topMastersPrograms": [
+                    "Engineering",
+                    "Business",
+                    "Psychology"
+                ],
+                "accreditation": "Recognized with high national and international rankings",
+                "tuitionFees": "\u00a325,000/year",
+                "livingExpenses": "\u00a310,000/year",
+                "admissionRequirements": {
+                    "GPA": "2:1 honours degree",
+                    "languageProficiency": "IELTS 6.5+",
+                    "tests": "GRE/GMAT optional"
+                },
+                "scholarships": "Partial scholarships available for international students",
+                "campusLife": "Active student unions and vibrant campus culture",
+                "workOpportunities": "On-campus work and internships",
+                "internationalSupport": "Visa assistance and international student office",
+                "applicationDeadlines": "February 15",
+                "callToAction": "https://www.manchester.ac.uk"
+            },
+            {
+                "universityName": "University of Leeds",
+                "logo": "universities/leeds.jpg",
+                "location": "Leeds, England",
+                "overview": "The University of Leeds is known for its diverse range of master's programs in humanities, sciences, and engineering, with a strong focus on research and student support.",
+                "topMastersPrograms": [
+                    "Biotechnology",
+                    "Business Management",
+                    "Engineering"
+                ],
+                "accreditation": "Accredited by top UK education authorities",
+                "tuitionFees": "£20,000/year",
+                "livingExpenses": "£12,000/year",
+                "admissionRequirements": {
+                    "GPA": "3.0+",
+                    "languageProficiency": "IELTS 6.5+",
+                    "tests": "GRE/GMAT (if required)"
+                },
+                "scholarships": "Merit-based and need-based scholarships available",
+                "campusLife": "Active student life with clubs, societies, and volunteering opportunities",
+                "workOpportunities": "Internships, part-time jobs, and placement programs",
+                "internationalSupport": "Visa guidance, international student orientation services",
+                "applicationDeadlines": "July 1",
+                "callToAction": "https://www.leeds.ac.uk"
+            },
+            {
+                "universityName": "University of Bristol",
+                "logo": "universities/bristol.jpg",
+                "location": "Bristol, England",
+                "overview": "The University of Bristol offers a variety of master's programs with a strong emphasis on research-led teaching, preparing students for a global career in their field of study.",
+                "topMastersPrograms": [
+                    "Social Work",
+                    "Physics",
+                    "Business Analytics"
+                ],
+                "accreditation": "Well-regarded for its research output and teaching quality",
+                "tuitionFees": "£23,000/year",
+                "livingExpenses": "£14,000/year",
+                "admissionRequirements": {
+                    "GPA": "3.3+",
+                    "languageProficiency": "IELTS 6.5+",
+                    "tests": "GRE (for specific programs)"
+                },
+                "scholarships": "Several scholarships for international students",
+                "campusLife": "Vibrant city campus with a range of student clubs, organizations, and networking events",
+                "workOpportunities": "Internships, volunteering, and part-time work opportunities",
+                "internationalSupport": "International student services, including visa assistance",
+                "applicationDeadlines": "July 15",
+                "callToAction": "https://www.bristol.ac.uk"
+            }
+        ],
+        "Level-3": [
+            {
+                "universityName": "University of Nottingham",
+                "logo": "universities/nottingham.jpg",
+                "location": "Nottingham, England",
+                "overview": "A well-regarded university offering a range of postgraduate programs at a moderate level of prestige.",
+                "topMastersPrograms": [
+                    "Education",
+                    "Management",
+                    "Biological Sciences"
+                ],
+                "accreditation": "Regionally recognized",
+                "tuitionFees": "\u00a320,000/year",
+                "livingExpenses": "\u00a39,000/year",
+                "admissionRequirements": {
+                    "GPA": "2:2 honours degree",
+                    "languageProficiency": "IELTS 6.0+",
+                    "tests": "GRE/GMAT optional"
+                },
+                "scholarships": "Available for international students with merit-based criteria",
+                "campusLife": "Campus offers various clubs and sports teams",
+                "workOpportunities": "Opportunities for internships and part-time work",
+                "internationalSupport": "Support for visa applications and orientation programs",
+                "applicationDeadlines": "December 1",
+                "callToAction": "https://www.nottingham.ac.uk"
+            },
+            {
+                "universityName": "University of Hertfordshire",
+                "logo": "universities/hertfordshire.jpg",
+                "location": "Hatfield, England",
+                "overview": "The University of Hertfordshire offers a wide range of undergraduate and postgraduate courses with a strong focus on employability and industry connections, particularly in business, health, and engineering.",
+                "topMastersPrograms": [
+                    "Business Management",
+                    "Computer Science",
+                    "Marketing"
+                ],
+                "accreditation": "Accredited by UK higher education authorities, with strong ties to industry",
+                "tuitionFees": "£15,000/year",
+                "livingExpenses": "£10,000/year",
+                "admissionRequirements": {
+                    "GPA": "2.5+",
+                    "languageProficiency": "IELTS 6.0+",
+                    "tests": "GRE/GMAT (if required)"
+                },
+                "scholarships": "Merit-based scholarships and financial aid available",
+                "campusLife": "Vibrant student life with various societies, clubs, and career services",
+                "workOpportunities": "Internships, industry placements, and part-time work options",
+                "internationalSupport": "Visa and international student support services",
+                "applicationDeadlines": "July 31",
+                "callToAction": "https://www.herts.ac.uk"
+            },
+            {
+                "universityName": "University of Portsmouth",
+                "logo": "universities/portsmouth.jpg",
+                "location": "Portsmouth, England",
+                "overview": "The University of Portsmouth offers practical and career-focused master's programs across various fields, particularly in engineering, business, and creative industries.",
+                "topMastersPrograms": [
+                    "Engineering",
+                    "Business Administration",
+                    "Creative Media"
+                ],
+                "accreditation": "Recognized for strong industry connections and practical education",
+                "tuitionFees": "£16,000/year",
+                "livingExpenses": "£11,000/year",
+                "admissionRequirements": {
+                    "GPA": "2.6+",
+                    "languageProficiency": "IELTS 6.0+",
+                    "tests": "GRE (if required)"
+                },
+                "scholarships": "International scholarships and financial support options",
+                "campusLife": "Engaged student life with a focus on practical learning and career readiness",
+                "workOpportunities": "Internships, work placements, and part-time job opportunities",
+                "internationalSupport": "Comprehensive visa and support services for international students",
+                "applicationDeadlines": "August 1",
+                "callToAction": "https://www.port.ac.uk"
+            }
+        ]
+    },
+    "Canada": {
+    "Level-1": [
+        {
+            "universityName": "University of Toronto",
+            "logo": "universities/toronto.jpg",
+            "location": "Toronto, Ontario",
+            "overview": "The University of Toronto is Canada's leading university, globally recognized for its excellence in teaching and research, offering a diverse range of master's programs.",
+            "topMastersPrograms": [
+                "Computer Science",
+                "Engineering",
+                "Business Administration"
+            ],
+            "accreditation": "Ranked as one of the top universities in the world",
+            "tuitionFees": "$40,000/year",
+            "livingExpenses": "$15,000/year",
+            "admissionRequirements": {
+                "GPA": "3.7+",
+                "languageProficiency": "IELTS 7.5+",
+                "tests": "GRE/GMAT"
+            },
+            "scholarships": "Merit-based scholarships and financial aid",
+            "campusLife": "Active campus with a wide range of clubs, research opportunities, and global networking",
+            "workOpportunities": "Internships, research assistantships, part-time work",
+            "internationalSupport": "Comprehensive visa and international student services",
+            "applicationDeadlines": "January 15",
+            "callToAction": "https://www.utoronto.ca"
+        },
+        {
+            "universityName": "McGill University",
+            "logo": "universities/mcgill.jpg",
+            "location": "Montreal, Quebec",
+            "overview": "McGill University is one of the most prestigious institutions in Canada, offering a wide range of graduate programs with a focus on academic excellence and global engagement.",
+            "topMastersPrograms": [
+                "Medicine",
+                "Law",
+                "Business Administration"
+            ],
+            "accreditation": "Ranked among the top universities globally",
+            "tuitionFees": "$45,000/year",
+            "livingExpenses": "$14,000/year",
+            "admissionRequirements": {
+                "GPA": "3.8+",
+                "languageProficiency": "TOEFL 100+",
+                "tests": "GRE/GMAT"
+            },
+            "scholarships": "Merit-based scholarships and need-based financial assistance",
+            "campusLife": "Vibrant multicultural campus with various student clubs and research centers",
+            "workOpportunities": "Internships, work-study programs, and part-time opportunities",
+            "internationalSupport": "Visa and orientation support for international students",
+            "applicationDeadlines": "December 15",
+            "callToAction": "https://www.mcgill.ca"
+        },
+        {
+            "universityName": "University of British Columbia (UBC)",
+            "logo": "universities/ubc.jpeg",
+            "location": "Vancouver, British Columbia",
+            "overview": "UBC is a globally recognized institution for its research and academic excellence, offering a wide range of graduate programs in science, technology, engineering, and humanities.",
+            "topMastersPrograms": [
+                "Computer Science",
+                "Engineering",
+                "Public Health"
+            ],
+            "accreditation": "Globally recognized top-tier university",
+            "tuitionFees": "$38,000/year",
+            "livingExpenses": "$16,000/year",
+            "admissionRequirements": {
+                "GPA": "3.7+",
+                "languageProficiency": "IELTS 7.0+",
+                "tests": "GRE (if applicable)"
+            },
+            "scholarships": "Merit-based and need-based scholarships available",
+            "campusLife": "Active campus with research programs and various student organizations",
+            "workOpportunities": "Internships, co-op programs, part-time work options",
+            "internationalSupport": "Visa services, orientation, and international student office",
+            "applicationDeadlines": "January 5",
+            "callToAction": "https://www.ubc.ca"
+        }
+    ],
+    "Level-2": [
+        {
+            "universityName": "University of Waterloo",
+            "logo": "universities/waterloo.jpg",
+            "location": "Waterloo, Ontario",
+            "overview": "The University of Waterloo is a leading institution for engineering, computer science, and business programs, known for its strong co-op programs and industry partnerships.",
+            "topMastersPrograms": [
+                "Engineering",
+                "Computer Science",
+                "Business Administration"
+            ],
+            "accreditation": "Recognized for innovation and research excellence",
+            "tuitionFees": "$30,000/year",
+            "livingExpenses": "$12,000/year",
+            "admissionRequirements": {
+                "GPA": "3.2+",
+                "languageProficiency": "IELTS 6.5+",
+                "tests": "GRE/GMAT (if required)"
+            },
+            "scholarships": "Several merit-based scholarships available",
+            "campusLife": "Vibrant campus with many student-run organizations, research centers, and clubs",
+            "workOpportunities": "Co-op programs, internships, part-time work",
+            "internationalSupport": "Visa and international student services",
+            "applicationDeadlines": "May 1",
+            "callToAction": "https://www.uwaterloo.ca"
+        },
+        {
+            "universityName": "Simon Fraser University",
+            "logo": "universities/simon.jpg",
+            "location": "Burnaby, British Columbia",
+            "overview": "Simon Fraser University is known for its strong graduate programs in engineering, business, and arts, with a focus on community engagement and research.",
+            "topMastersPrograms": [
+                "Computer Science",
+                "Engineering",
+                "Business Administration"
+            ],
+            "accreditation": "Ranked highly for its research and graduate programs",
+            "tuitionFees": "$28,000/year",
+            "livingExpenses": "$13,000/year",
+            "admissionRequirements": {
+                "GPA": "3.0+",
+                "languageProficiency": "IELTS 6.5+",
+                "tests": "GRE/GMAT (if required)"
+            },
+            "scholarships": "Merit-based and need-based scholarships available",
+            "campusLife": "Engaged campus with research opportunities and student-led organizations",
+            "workOpportunities": "Internships, co-op programs, part-time jobs",
+            "internationalSupport": "Visa and international student support services",
+            "applicationDeadlines": "May 31",
+            "callToAction": "https://www.sfu.ca"
+        },
+        {
+            "universityName": "University of Calgary",
+            "logo": "universities/calgary.jpg",
+            "location": "Calgary, Alberta",
+            "overview": "The University of Calgary offers strong programs in engineering, business, and health sciences, with a focus on hands-on learning and industry partnerships.",
+            "topMastersPrograms": [
+                "Engineering",
+                "Business Administration",
+                "Health Sciences"
+            ],
+            "accreditation": "Recognized for academic and research excellence",
+            "tuitionFees": "$25,000/year",
+            "livingExpenses": "$11,000/year",
+            "admissionRequirements": {
+                "GPA": "3.0+",
+                "languageProficiency": "IELTS 6.5+",
+                "tests": "GRE (for certain programs)"
+            },
+            "scholarships": "Various merit-based and need-based scholarships available",
+            "campusLife": "Active campus with clubs, societies, and student organizations",
+            "workOpportunities": "Internships, part-time work, and industry placements",
+            "internationalSupport": "Visa services and international student assistance",
+            "applicationDeadlines": "June 1",
+            "callToAction": "https://www.ucalgary.ca"
+        }
+    ],
+    "Level-3": [
+        {
+            "universityName": "University of Windsor",
+            "logo": "universities/windsor.jpg",
+            "location": "Windsor, Ontario",
+            "overview": "The University of Windsor offers a variety of graduate programs, with a focus on practical learning and community involvement.",
+            "topMastersPrograms": [
+                "Business Administration",
+                "Engineering",
+                "Social Work"
+            ],
+            "accreditation": "Accredited by Canadian authorities for quality education",
+            "tuitionFees": "$20,000/year",
+            "livingExpenses": "$10,000/year",
+            "admissionRequirements": {
+                "GPA": "2.8+",
+                "languageProficiency": "IELTS 6.0+",
+                "tests": "GRE (if required)"
+            },
+            "scholarships": "Merit-based scholarships available",
+            "campusLife": "A community-oriented campus with various student organizations and events",
+            "workOpportunities": "Internships, part-time work",
+            "internationalSupport": "Visa assistance and international student services",
+            "applicationDeadlines": "June 30",
+            "callToAction": "https://www.uwindsor.ca"
+        },
+        {
+            "universityName": "York University",
+            "logo": "universities/york.jpg",
+            "location": "Toronto, Ontario",
+            "overview": "York University is a diverse institution offering a wide range of graduate programs with a focus on student success and industry connections.",
+            "topMastersPrograms": [
+                "Business Administration",
+                "Human Resources",
+                "Political Science"
+            ],
+            "accreditation": "Recognized for its focus on student success and research",
+            "tuitionFees": "$22,000/year",
+            "livingExpenses": "$12,000/year",
+            "admissionRequirements": {
+                "GPA": "2.8+",
+                "languageProficiency": "IELTS 6.5+",
+                "tests": "GRE/GMAT"
+            },
+            "scholarships": "Merit-based and need-based scholarships",
+            "campusLife": "Diverse student life with various clubs and support programs",
+            "workOpportunities": "Part-time work and internships",
+            "internationalSupport": "Visa support and international student services",
+            "applicationDeadlines": "July 1",
+            "callToAction": "https://www.yorku.ca"
+        },
+        {
+            "universityName": "Lakehead University",
+            "logo": "universities/lakehead.jpg",
+            "location": "Thunder Bay, Ontario",
+            "overview": "Lakehead University offers graduate programs with a focus on practical, hands-on learning and community engagement.",
+            "topMastersPrograms": [
+                "Engineering",
+                "Business Administration",
+                "Education"
+            ],
+            "accreditation": "Accredited by Canadian educational authorities",
+            "tuitionFees": "$18,000/year",
+            "livingExpenses": "$9,000/year",
+            "admissionRequirements": {
+                "GPA": "2.7+",
+                "languageProficiency": "IELTS 6.0+",
+                "tests": "GRE (if required)"
+            },
+            "scholarships": "Various scholarships available for international students",
+            "campusLife": "Small campus with a close-knit community and several student organizations",
+            "workOpportunities": "Internships, part-time jobs",
+            "internationalSupport": "Visa assistance and international student support",
+            "applicationDeadlines": "July 15",
+            "callToAction": "https://www.lakeheadu.ca"
+        }
+    ]   
+},
+    "Australia": {
+    "Level-1": [
+        {
+            "universityName": "University of Melbourne",
+            "logo": "universities/melbourne.jpg",
+            "location": "Melbourne, Victoria",
+            "overview": "The University of Melbourne is Australia's leading university, globally recognized for its research excellence and diverse range of graduate programs across multiple fields.",
+            "topMastersPrograms": [
+                "Engineering",
+                "Business Administration",
+                "Law"
+            ],
+            "accreditation": "Ranked among the top universities in the world",
+            "tuitionFees": "$45,000/year",
+            "livingExpenses": "$18,000/year",
+            "admissionRequirements": {
+                "GPA": "3.7+",
+                "languageProficiency": "IELTS 7.0+",
+                "tests": "GRE/GMAT"
+            },
+            "scholarships": "Merit-based scholarships and financial aid",
+            "campusLife": "A vibrant campus life with many research opportunities, student clubs, and organizations",
+            "workOpportunities": "Internships, research assistantships, part-time work",
+            "internationalSupport": "Visa and international student services",
+            "applicationDeadlines": "December 15",
+            "callToAction": "https://www.unimelb.edu.au"
+        },
+        {
+            "universityName": "Australian National University (ANU)",
+            "logo": "universities/anu.jpeg",
+            "location": "Canberra, Australian Capital Territory",
+            "overview": "ANU is Australia's premier research university, offering world-class graduate programs in science, law, engineering, and more.",
+            "topMastersPrograms": [
+                "Data Science",
+                "International Relations",
+                "Engineering"
+            ],
+            "accreditation": "Globally recognized top-tier university",
+            "tuitionFees": "$50,000/year",
+            "livingExpenses": "$17,000/year",
+            "admissionRequirements": {
+                "GPA": "3.8+",
+                "languageProficiency": "TOEFL 100+",
+                "tests": "GRE/GMAT (as required)"
+            },
+            "scholarships": "Merit-based scholarships and financial aid options available",
+            "campusLife": "Active research culture, global student body, and numerous academic clubs",
+            "workOpportunities": "Internships, research roles, and industry placements",
+            "internationalSupport": "Visa services and orientation for international students",
+            "applicationDeadlines": "January 15",
+            "callToAction": "https://www.anu.edu.au"
+        },
+        {
+            "universityName": "University of Sydney",
+            "logo": "universities/sydney.jpg",
+            "location": "Sydney, New South Wales",
+            "overview": "The University of Sydney is known for its academic excellence and a wide range of graduate programs, including those in business, law, and science.",
+            "topMastersPrograms": [
+                "Law",
+                "Engineering",
+                "Business Administration"
+            ],
+            "accreditation": "Ranked as one of the top universities in Australia and the world",
+            "tuitionFees": "$48,000/year",
+            "livingExpenses": "$17,500/year",
+            "admissionRequirements": {
+                "GPA": "3.6+",
+                "languageProficiency": "IELTS 7.0+",
+                "tests": "GRE/GMAT"
+            },
+            "scholarships": "Various merit-based scholarships and financial assistance",
+            "campusLife": "Diverse student life with a range of clubs, societies, and research opportunities",
+            "workOpportunities": "Internships, part-time jobs, and industry placements",
+            "internationalSupport": "Visa assistance and international student services",
+            "applicationDeadlines": "November 30",
+            "callToAction": "https://www.sydney.edu.au"
+        }
+    ],
+    "Level-2": [
+        {
+            "universityName": "University of Queensland",
+            "logo": "universities/queensland.jpg",
+            "location": "Brisbane, Queensland",
+            "overview": "The University of Queensland is known for its strong graduate programs in research, engineering, and health sciences, with an emphasis on practical learning and employability.",
+            "topMastersPrograms": [
+                "Engineering",
+                "Business Administration",
+                "Biomedical Science"
+            ],
+            "accreditation": "Recognized for its research excellence and academic quality",
+            "tuitionFees": "$35,000/year",
+            "livingExpenses": "$14,000/year",
+            "admissionRequirements": {
+                "GPA": "3.0+",
+                "languageProficiency": "IELTS 6.5+",
+                "tests": "GRE/GMAT (as required)"
+            },
+            "scholarships": "Merit-based and need-based scholarships available",
+            "campusLife": "Vibrant campus with research centers and student organizations",
+            "workOpportunities": "Internships, co-op programs, part-time jobs",
+            "internationalSupport": "Visa services and international student assistance",
+            "applicationDeadlines": "May 31",
+            "callToAction": "https://www.uq.edu.au"
+        },
+        {
+            "universityName": "Monash University",
+            "logo": "universities/monash.jpg",
+            "location": "Melbourne, Victoria",
+            "overview": "Monash University offers strong master's programs in various fields, with a focus on industry connections and research opportunities.",
+            "topMastersPrograms": [
+                "Information Technology",
+                "Pharmacy",
+                "Business Administration"
+            ],
+            "accreditation": "Well-regarded for its research output and academic quality",
+            "tuitionFees": "$38,000/year",
+            "livingExpenses": "$16,000/year",
+            "admissionRequirements": {
+                "GPA": "3.0+",
+                "languageProficiency": "IELTS 6.5+",
+                "tests": "GRE/GMAT (if required)"
+            },
+            "scholarships": "Merit-based scholarships and international awards",
+            "campusLife": "Diverse campus life with various student-led organizations and clubs",
+            "workOpportunities": "Internships, research opportunities, and part-time jobs",
+            "internationalSupport": "Visa services, orientation programs, and international student support",
+            "applicationDeadlines": "June 30",
+            "callToAction": "https://www.monash.edu.au"
+        },
+        {
+            "universityName": "University of New South Wales (UNSW)",
+            "logo": "universities/unsw.jpg",
+            "location": "Sydney, New South Wales",
+            "overview": "UNSW is known for its innovative research and diverse graduate programs, particularly in engineering, business, and technology.",
+            "topMastersPrograms": [
+                "Engineering",
+                "Business Administration",
+                "Data Science"
+            ],
+            "accreditation": "Globally recognized for its engineering and research programs",
+            "tuitionFees": "$40,000/year",
+            "livingExpenses": "$15,000/year",
+            "admissionRequirements": {
+                "GPA": "3.2+",
+                "languageProficiency": "IELTS 6.5+",
+                "tests": "GRE (for certain programs)"
+            },
+            "scholarships": "Merit-based scholarships and financial assistance",
+            "campusLife": "Active campus with research programs, social clubs, and international networking",
+            "workOpportunities": "Internships, industry placements, part-time work",
+            "internationalSupport": "Visa support and international student services",
+            "applicationDeadlines": "May 31",
+            "callToAction": "https://www.unsw.edu.au"
+        }
+    ],
+    "Level-3": [
+        {
+            "universityName": "University of South Australia",
+            "logo": "universities/south.jpg",
+            "location": "Adelaide, South Australia",
+            "overview": "The University of South Australia offers graduate programs with a focus on practical skills and employability, especially in business and health-related fields.",
+            "topMastersPrograms": [
+                "Business Administration",
+                "Information Technology",
+                "Education"
+            ],
+            "accreditation": "Accredited by Australian authorities for quality education",
+            "tuitionFees": "$22,000/year",
+            "livingExpenses": "$12,000/year",
+            "admissionRequirements": {
+                "GPA": "2.8+",
+                "languageProficiency": "IELTS 6.0+",
+                "tests": "GRE/GMAT (if required)"
+            },
+            "scholarships": "Merit-based scholarships and international student awards",
+            "campusLife": "Community-oriented campus with several student societies and industry partnerships",
+            "workOpportunities": "Internships, part-time work opportunities",
+            "internationalSupport": "Visa services and student support services",
+            "applicationDeadlines": "July 1",
+            "callToAction": "https://www.unisa.edu.au"
+        },
+        {
+            "universityName": "University of Wollongong",
+            "logo": "universities/uow.jpg",
+            "location": "Wollongong, New South Wales",
+            "overview": "The University of Wollongong offers graduate programs with an emphasis on employability, industry connections, and community involvement.",
+            "topMastersPrograms": [
+                "Business Administration",
+                "Information Technology",
+                "Health Sciences"
+            ],
+            "accreditation": "Accredited by Australian education authorities",
+            "tuitionFees": "$24,000/year",
+            "livingExpenses": "$13,000/year",
+            "admissionRequirements": {
+                "GPA": "2.7+",
+                "languageProficiency": "IELTS 6.0+",
+                "tests": "GRE (if required)"
+            },
+            "scholarships": "Various merit-based scholarships available",
+            "campusLife": "Active campus with various clubs and societies, and strong industry ties",
+            "workOpportunities": "Internships, work placements, and part-time jobs",
+            "internationalSupport": "Visa support and international student services",
+            "applicationDeadlines": "June 30",
+            "callToAction": "https://www.uow.edu.au"
+        },
+        {
+            "universityName": "CQUniversity Australia",
+            "logo": "universities/cqu.jpeg",
+            "location": "Rockhampton, Queensland",
+            "overview": "CQUniversity is known for its practical graduate programs, particularly in education, business, and engineering, with an emphasis on student support and employability.",
+            "topMastersPrograms": [
+                "Business Administration",
+                "Information Technology",
+                "Education"
+            ],
+            "accreditation": "Accredited by Australian education authorities",
+            "tuitionFees": "$20,000/year",
+            "livingExpenses": "$11,000/year",
+            "admissionRequirements": {
+                "GPA": "2.5+",
+                "languageProficiency": "IELTS 6.0+",
+                "tests": "GRE/GMAT (if required)"
+            },
+            "scholarships": "Merit-based scholarships available",
+            "campusLife": "Community-focused campus with student support services and industry connections",
+            "workOpportunities": "Internships and part-time work opportunities",
+            "internationalSupport": "Visa services and support for international students",
+            "applicationDeadlines": "July 15",
+            "callToAction": "https://www.cqu.edu.au"
+        }
+    ]
+},
+    "Germany": {
+    "Level-1": [
+        {
+            "universityName": "Ludwig Maximilian University of Munich (LMU)",
+            "logo": "universities/lmu.jpg",
+            "location": "Munich, Bavaria",
+            "overview": "LMU Munich is one of the leading research universities in Germany, offering highly respected graduate programs across various fields, including sciences, humanities, and business.",
+            "topMastersPrograms": [
+                "Physics",
+                "Law",
+                "Business Administration"
+            ],
+            "accreditation": "Ranked among the top universities in the world",
+            "tuitionFees": "€0 (no tuition fees for EU students)",
+            "livingExpenses": "€10,000/year",
+            "admissionRequirements": {
+                "GPA": "3.5+",
+                "languageProficiency": "TOEFL 100+ or IELTS 7.0+",
+                "tests": "GRE/GMAT (as applicable)"
+            },
+            "scholarships": "Merit-based scholarships available",
+            "campusLife": "Vibrant campus with research institutes, cultural activities, and international student clubs",
+            "workOpportunities": "Internships, research assistantships, part-time jobs",
+            "internationalSupport": "Visa assistance, orientation programs for international students",
+            "applicationDeadlines": "July 15",
+            "callToAction": "https://www.en.uni-muenchen.de"
+        },
+        {
+            "universityName": "Heidelberg University",
+            "logo": "universities/heidelberg.jpg",
+            "location": "Heidelberg, Baden-Württemberg",
+            "overview": "Heidelberg University is Germany's oldest university, offering prestigious graduate programs in the humanities, life sciences, and social sciences.",
+            "topMastersPrograms": [
+                "Medicine",
+                "Law",
+                "Natural Sciences"
+            ],
+            "accreditation": "Globally recognized for its research and academic excellence",
+            "tuitionFees": "€0 (no tuition fees for EU students)",
+            "livingExpenses": "€12,000/year",
+            "admissionRequirements": {
+                "GPA": "3.5+",
+                "languageProficiency": "TOEFL 100+ or IELTS 7.0+",
+                "tests": "GRE (if applicable)"
+            },
+            "scholarships": "Various scholarships for international students",
+            "campusLife": "Cultural city with a historical campus and strong research community",
+            "workOpportunities": "Research assistantships, internships, and part-time jobs",
+            "internationalSupport": "Visa services, international student support",
+            "applicationDeadlines": "July 1",
+            "callToAction": "https://www.uni-heidelberg.de"
+        },
+        {
+            "universityName": "Technical University of Munich (TUM)",
+            "logo": "universities/tum.jpg",
+            "location": "Munich, Bavaria",
+            "overview": "TUM is one of Europe's top universities, with a strong emphasis on engineering, technology, and natural sciences, offering top-tier graduate programs.",
+            "topMastersPrograms": [
+                "Engineering",
+                "Computer Science",
+                "Data Science"
+            ],
+            "accreditation": "Globally recognized for research excellence in engineering and technology",
+            "tuitionFees": "€0 (no tuition fees for EU students)",
+            "livingExpenses": "€11,000/year",
+            "admissionRequirements": {
+                "GPA": "3.5+",
+                "languageProficiency": "TOEFL 100+ or IELTS 7.0+",
+                "tests": "GRE (if applicable)"
+            },
+            "scholarships": "Merit-based scholarships available for international students",
+            "campusLife": "Innovative campus with industry collaborations, research institutes, and international networking",
+            "workOpportunities": "Internships, research assistantships, and part-time employment",
+            "internationalSupport": "Visa assistance, orientation programs, and international student support",
+            "applicationDeadlines": "July 15",
+            "callToAction": "https://www.tum.de"
+        }
+    ],
+    "Level-2": [
+        {
+            "universityName": "University of Mannheim",
+            "logo": "universities/mannheim.jpeg",
+            "location": "Mannheim, Baden-Württemberg",
+            "overview": "The University of Mannheim is well known for its business and economics programs, offering strong graduate programs in social sciences and humanities.",
+            "topMastersPrograms": [
+                "Business Administration",
+                "Economics",
+                "Political Science"
+            ],
+            "accreditation": "Recognized for its research output and academic standards",
+            "tuitionFees": "€1,500/year (for non-EU students)",
+            "livingExpenses": "€10,000/year",
+            "admissionRequirements": {
+                "GPA": "3.0+",
+                "languageProficiency": "TOEFL 90+ or IELTS 6.5+",
+                "tests": "GMAT (for business programs)"
+            },
+            "scholarships": "Merit-based scholarships and financial aid options",
+            "campusLife": "Active student life with research collaborations and cultural events",
+            "workOpportunities": "Internships, research assistantships, and part-time jobs",
+            "internationalSupport": "Visa services and international student support",
+            "applicationDeadlines": "June 30",
+            "callToAction": "https://www.uni-mannheim.de"
+        },
+        {
+            "universityName": "University of Leipzig",
+            "logo": "universities/leipzig.jpg",
+            "location": "Leipzig, Saxony",
+            "overview": "The University of Leipzig is known for its strong graduate programs in social sciences, humanities, and natural sciences.",
+            "topMastersPrograms": [
+                "Philosophy",
+                "Law",
+                "Psychology"
+            ],
+            "accreditation": "Highly regarded for its research and academic programs",
+            "tuitionFees": "€0 (no tuition fees for EU students)",
+            "livingExpenses": "€9,000/year",
+            "admissionRequirements": {
+                "GPA": "2.8+",
+                "languageProficiency": "TOEFL 85+ or IELTS 6.0+",
+                "tests": "GRE (if applicable)"
+            },
+            "scholarships": "Merit-based scholarships available for international students",
+            "campusLife": "Historic campus with a strong academic and research tradition",
+            "workOpportunities": "Internships and part-time work options",
+            "internationalSupport": "Visa and international student services",
+            "applicationDeadlines": "July 15",
+            "callToAction": "https://www.uni-leipzig.de"
+        },
+        {
+            "universityName": "University of Freiburg",
+            "logo": "universities/freiburg.jpg",
+            "location": "Freiburg, Baden-Württemberg",
+            "overview": "The University of Freiburg offers high-quality graduate programs, particularly in the sciences, humanities, and law.",
+            "topMastersPrograms": [
+                "Engineering",
+                "Law",
+                "Life Sciences"
+            ],
+            "accreditation": "Globally recognized for its academic and research excellence",
+            "tuitionFees": "€0 (no tuition fees for EU students)",
+            "livingExpenses": "€11,000/year",
+            "admissionRequirements": {
+                "GPA": "3.0+",
+                "languageProficiency": "TOEFL 90+ or IELTS 6.5+",
+                "tests": "GRE (if applicable)"
+            },
+            "scholarships": "Various merit-based scholarships available",
+            "campusLife": "Active research environment and international student community",
+            "workOpportunities": "Internships and part-time work opportunities",
+            "internationalSupport": "Visa services, orientation programs, and international student support",
+            "applicationDeadlines": "June 30",
+            "callToAction": "https://www.uni-freiburg.de"
+        }
+    ],
+    "Level-3": [
+        {
+            "universityName": "University of Regensburg",
+            "logo": "universities/regensburg.jpg",
+            "location": "Regensburg, Bavaria",
+            "overview": "The University of Regensburg offers graduate programs with a focus on humanities, social sciences, and business.",
+            "topMastersPrograms": [
+                "Philosophy",
+                "Business Administration",
+                "Sociology"
+            ],
+            "accreditation": "Accredited by German academic bodies",
+            "tuitionFees": "€0 (no tuition fees for EU students)",
+            "livingExpenses": "€9,000/year",
+            "admissionRequirements": {
+                "GPA": "2.5+",
+                "languageProficiency": "TOEFL 85+ or IELTS 6.0+",
+                "tests": "GRE/GMAT (if applicable)"
+            },
+            "scholarships": "Merit-based scholarships available",
+            "campusLife": "Small campus with a growing international student population",
+            "workOpportunities": "Part-time work and internships",
+            "internationalSupport": "Visa services, international student support",
+            "applicationDeadlines": "July 15",
+            "callToAction": "https://www.uni-regensburg.de"
+        },
+        {
+            "universityName": "University of Passau",
+            "logo": "universities/passau.jpg",
+            "location": "Passau, Bavaria",
+            "overview": "The University of Passau offers graduate programs with a focus on humanities, law, and business administration.",
+            "topMastersPrograms": [
+                "Law",
+                "Business Administration",
+                "Information Systems"
+            ],
+            "accreditation": "Accredited by German educational authorities",
+            "tuitionFees": "€0 (no tuition fees for EU students)",
+            "livingExpenses": "€8,500/year",
+            "admissionRequirements": {
+                "GPA": "2.8+",
+                "languageProficiency": "TOEFL 85+ or IELTS 6.0+",
+                "tests": "GRE/GMAT (if required)"
+            },
+            "scholarships": "Merit-based scholarships available",
+            "campusLife": "Small campus with active student life and research opportunities",
+            "workOpportunities": "Internships, research assistantships, and part-time jobs",
+            "internationalSupport": "Visa services and international student support",
+            "applicationDeadlines": "July 1",
+            "callToAction": "https://www.uni-passau.de"
+        },
+        {
+            "universityName": "University of Hagen",
+            "logo": "universities/hagen.jpg",
+            "location": "Hagen, North Rhine-Westphalia",
+            "overview": "The University of Hagen offers flexible, part-time graduate programs, especially for working professionals and distance learning students.",
+            "topMastersPrograms": [
+                "Business Administration",
+                "Psychology",
+                "Social Work"
+            ],
+            "accreditation": "Accredited by German academic bodies",
+            "tuitionFees": "€0 (no tuition fees for EU students)",
+            "livingExpenses": "€9,000/year",
+            "admissionRequirements": {
+                "GPA": "2.5+",
+                "languageProficiency": "TOEFL 85+ or IELTS 6.0+",
+                "tests": "GMAT (for business programs)"
+            },
+            "scholarships": "Various scholarships available",
+            "campusLife": "Flexible learning options with a focus on professional development",
+            "workOpportunities": "Part-time work and internships available",
+            "internationalSupport": "Visa assistance and student support services",
+            "applicationDeadlines": "June 30",
+            "callToAction": "https://www.fernuni-hagen.de"
+        }
+    ]
+}
+}

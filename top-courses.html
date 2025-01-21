@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Courses to Study Abroad</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-bg: #f0d3f7;
+      --primary-text: #120d31;
+      --secondary-bg: #302f4d;
+      --accent: #a57982;
+      --accent-hover: #d16c809a;
+      --card-bg: #fff;
+    }
+
+    /* Global Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--primary-bg);
+      color: var(--primary-text);
+    }
+
+    /* Header Section */
+    .header-section {
+      background-color: var(--secondary-bg);
+      padding: 50px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    /* Back Home Button Styling */
+.back-home-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background-color: var(--accent);
+    color: var(--primary-bg);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .back-home-btn:hover {
+    background-color: var(--accent-hover);
+    color: var(--primary-text);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Ensure the header has relative positioning for absolute placement */
+  .header-section {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+    .header-section h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .header-section h2 {
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    /* Section Titles */
+    h2, h3 {
+      color: var(--primary-text);
+      margin-bottom: 20px;
+    }
+
+    /* Featured Top Courses Section Styles */
+.courses-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .courses-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-btn {
+    background-color: var(--accent);
+    color: var(--primary-bg);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-btn:hover {
+    background-color: var(--accent-hover);
+  }
+  
+  .course-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Course Card Styles */
+  .course-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--secondary-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    width: 100%;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .course-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .course-card p {
+    font-size: 14px;
+    color: var(--primary-text);
+    margin-bottom: 10px;
+  }
+  
+  .course-card a {
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .course-card a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive Styles */
+@media (max-width: 768px) {
+    .header-section h1{
+        margin-top: 25px;
+    }
+    .filter-btn {
+      font-size: 12px;
+      padding: 8px 10px;
+    }
+  
+    .course-card {
+      max-width: 100%;
+    }
+  
+    .courses-section h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .filter-btn {
+      font-size: 10px;
+      padding: 6px 8px;
+    }
+  
+    .courses-section h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  
+
+    /* Introduction Section */
+    .intro-section {
+      background-color: var(--secondary-bg);
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+
+    /*course section*/
+    .course-filter {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      
+      .course-filter label {
+        font-size: 1.2rem;
+        color: var(--primary-text);
+        margin-right: 10px;
+      }
+      
+      .course-filter select {
+        padding: 10px;
+        font-size: 1rem;
+        background-color: var(--card-bg);
+        border: 1px solid var(--secondary-bg);
+        border-radius: 5px;
+        color: var(--primary-text);
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .course-filter select:hover {
+        background-color: var(--accent);
+      }
+      
+    /* FAQ Section */
+    .faq-section {
+      padding: 40px 20px;
+      background-color: var(--primary-bg);
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background-color: var(--card-bg);
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .faq-item h4 {
+      margin: 0;
+      font-size: 1.25rem;
+      color: var(--primary-text);
+    }
+
+    .faq-item p {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: var(--primary-text);
+    }
+
+    /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--primary-text);
+    background-color: var(--primary-bg);
+  }
+  
+  /* Section Styling */
+  .course-details {
+    padding: 50px 20px;
+    background-color: var(--secondary-bg);
+    color: var(--primary-bg);
+  }
+  
+  .course-details h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--primary-bg);
+  }
+  
+  /* Course Filter */
+  .course-filter {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .course-filter label {
+    font-size: 1.2rem;
+    color: var(--primary-bg);
+  }
+  
+  #course-select {
+    padding: 10px 15px;
+    font-size: 1rem;
+    margin-left: 10px;
+    border: 1px solid var(--primary-text);
+    border-radius: 5px;
+    color: var(--primary-text);
+    background-color: var(--primary-bg);
+  }
+  
+  #course-select:hover {
+    background-color: var(--accent-hover);
+    cursor: pointer;
+  }
+  
+  /* Tabs Navigation */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab-btn {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: var(--accent);
+    color: var(--primary-bg);
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .tab-btn.active,
+  .tab-btn:hover {
+    background-color: var(--accent-hover);
+    transform: scale(1.05);
+  }
+  
+  /* Tab Contents */
+  .tab-content {
+    display: none;
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .tab-content h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: var(--primary-text);
+  }
+  
+  .tab-content ul {
+    list-style: disc;
+    margin: 15px 0;
+    padding-left: 20px;
+    color: var(--secondary-bg);
+  }
+  
+  .tab-content p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: var(--primary-text);
+  }
+  
+  /* Active Tab Content */
+  .tab-content.active {
+    display: block;
+  }
+
+  /* Tab Content Styling */
+.tab-content {
+    display: none; /* Hide all tabs initially */
+  }
+  
+  .tab-content.active {
+    display: block; /* Show the active tab */
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .tabs {
+      flex-wrap: wrap;
+    }
+  
+    .tab-btn {
+      margin: 5px 0;
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  
+
+    /* Footer Section */
+    .footer {
+      background-color: var(--secondary-bg);
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header-section" data-aos="fade-in">
+      <a href="index.html" class="back-home-btn" title="Back to Home">Home</a>
+      <h1>Top Courses to Study Abroad</h1>
+      <h2>Explore the best academic courses for global career opportunities</h2>
+    </header>
+    
+
+  <!-- Introduction Section -->
+  <section class="intro-section" data-aos="fade-up">
+    <p>Choosing the right course is crucial for a successful international career. With a range of programs available worldwide, finding a course that aligns with your goals is key to shaping your future.</p>
+  </section>
+
+  <!-- Featured Top Courses Section -->
+  <section class="courses-section" data-aos="fade-up">
+    <h2>Featured Top Courses</h2>
+    <div class="category-filters">
+      <button class="filter-btn" onclick="filterCourses('All')">All</button>
+      <button class="filter-btn" onclick="filterCourses('Computer Science')">Computer Science</button>
+      <button class="filter-btn" onclick="filterCourses('Business Administration')">Business Administration</button>
+      <button class="filter-btn" onclick="filterCourses('Medicine')">Medicine</button>
+      <button class="filter-btn" onclick="filterCourses('Engineering')">Engineering</button>
+      <button class="filter-btn" onclick="filterCourses('Arts & Humanities')">Arts & Humanities</button>
+      <button class="filter-btn" onclick="filterCourses('Law')">Law</button>
+      <button class="filter-btn" onclick="filterCourses('Design')">Design</button>
+    </div>
+    <div class="course-cards-container" id="course-cards-container">
+      <!-- Course Cards will be dynamically loaded here -->
+    </div>
+  </section>
+
+  <section class="course-details">
+    <div class="container">
+      <h2 id="course-title">Select a Course</h2>
+      
+      <!-- Course Selection Filter -->
+      <div class="course-filter">
+        <label for="course-select">Choose a course:</label>
+        <select id="course-select">
+          <option value="computer-science">Computer Science</option>
+          <option value="business-administration">Business Administration</option>
+          <option value="medicine">Medicine</option>
+          <option value="engineering">Engineering</option>
+          <option value="artsHumanities">Arts & Humanities</option>
+          <option value="law">Law</option>
+          <option value="design">Design</option>
+        </select>
+      </div>
+      
+      <!-- Tabs Navigation -->
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="overview">Overview</button>
+        <button class="tab-btn" data-tab="universities">Top Universities</button>
+        <button class="tab-btn" data-tab="subjects">Key Subjects</button>
+        <button class="tab-btn" data-tab="career">Career Opportunities</button>
+        <button class="tab-btn" data-tab="requirements">Entry Requirements</button>
+        <button class="tab-btn" data-tab="fees">Tuition Fees & Scholarships</button>
+      </div>
+      
+      <!-- Tab Contents (Overview, Universities, etc.) -->
+      <!-- Will remain the same as before... -->
+      <div class="tab-content" id="overview">
+        <h3>Overview of the Course</h3>
+        <p id="course-overview">This is an overview of the course. It provides detailed information about the course, its objectives, and what students can expect.</p>
+      </div>
+  
+      <div class="tab-content" id="universities">
+        <h3>Top Universities Offering the Course</h3>
+        <ul id="universities-list"></ul>
+      </div>
+  
+      <div class="tab-content" id="subjects">
+        <h3>Key Subjects</h3>
+        <ul id="subjects-list"></ul>
+      </div>
+  
+      <div class="tab-content" id="career">
+        <h3>Career Opportunities</h3>
+        <p id="career-opportunities"></p>
+      </div>
+  
+      <div class="tab-content" id="requirements">
+        <h3>Entry Requirements</h3>
+        <ul id="requirements-list"></ul>
+      </div>
+  
+      <div class="tab-content" id="fees">
+        <h3>Tuition Fees & Scholarships</h3>
+        <p id="tuition-fees"></p>
+        <p id="scholarships"></p>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- FAQ Section -->
+  <section class="faq-section" data-aos="fade-up">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <h4>What are the most affordable countries to study Business Administration?</h4>
+        <p>Countries like Germany, Canada, and the UK offer affordable options for students pursuing a business degree.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Can I work while studying?</h4>
+        <p>Many countries allow international students to work part-time while studying, which can help with living expenses.</p>
+      </div>
+      <div class="faq-item">
+        <h4>What scholarships are available for international students?</h4>
+        <p>There are various scholarships available based on merit, need, and nationality. Check out university-specific scholarships and government-funded opportunities.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2025 Top 5 Abroad Guide | All rights reserved</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+  <script>
+    // Fetch course data from JSON file
+let courses = [];
+fetch('courses.json')
+  .then(response => response.json())
+  .then(data => {
+    courses = data;
+    loadCourses(courses); // Load all courses initially
+  })
+  .catch(error => console.error('Error loading the course data:', error));
+
+// Load courses into the DOM
+function loadCourses(courseList) {
+  const container = document.getElementById('course-cards-container');
+  container.innerHTML = ''; // Clear existing courses
+  courseList.forEach(course => {
+    const courseCard = document.createElement('div');
+    courseCard.classList.add('course-card');
+    
+    // Assigning URLs for "Learn More" button based on course name
+    let courseURL = '';
+    if (course.name === "Master’s in Computer Science") {
+      courseURL = "https://www.csail.mit.edu/";
+    } else if (course.name === "Master’s in Business Administration") {
+      courseURL = "https://www.hbs.edu/mba/";
+    } else if (course.name === "Bachelor’s in Medicine") {
+      courseURL = "https://www.ox.ac.uk/admissions/undergraduate/courses/course-listing/medicine";
+    } else if (course.name === "Master’s in Engineering") {
+      courseURL = "https://www.undergraduate.study.cam.ac.uk/courses/engineering-ba-hons-meng";
+    } else if (course.name === "Bachelor’s in Arts & Humanities") {
+      courseURL = "https://college.harvard.edu/admissions/why-harvard/arts-humanities";
+    } else if (course.name === "Master’s in Law") {
+      courseURL = "https://www.law.harvard.edu/";
+    } else if (course.name === "Bachelor’s in Design") {
+      courseURL = "https://www.risd.edu/academics/design-engineering";
+    }
+
+    courseCard.innerHTML = `
+      <h3>${course.name}</h3>
+      <p>${course.description}</p>
+      <ul>
+        <li><strong>Key Universities:</strong> ${course.universities.join(', ')}</li>
+        <li><strong>Starting Salary:</strong> ${course.average_salary}</li>
+        <li><strong>Duration:</strong> ${course.duration}</li>
+      </ul>
+      <a href="${courseURL}" target="_blank"><button class="course-btn">Learn More</button></a>
+    `;
+    
+    container.appendChild(courseCard);
+  });
+}
+
+// Filter courses by category
+function filterCourses(category) {
+  if (category === 'All') {
+    loadCourses(courses);
+  } else {
+    const filteredCourses = courses.filter(course => course.category === category);
+    loadCourses(filteredCourses);
+  }
+}
+
+// Course details redirection (or modal can be used)
+function viewCourseDetails(courseName) {
+  alert(`View details for ${courseName}`);
+  // You can replace this with logic to show course details in a modal or redirect to a new page
+}
+
+  </script>
+
+  <script>
+    // Sample JSON file data for all courses
+const coursesData = {
+    "computer-science": {
+      "courseName": "Computer Science",
+      "overview": "This course offers an in-depth understanding of computer science, including programming, algorithms, and data structures.",
+      "universities": [
+        { "name": "MIT", "link": "https://www.mit.edu/" },
+        { "name": "Stanford University", "link": "https://www.stanford.edu/" },
+        { "name": "Harvard University", "link": "https://www.harvard.edu/" }
+      ],
+      "subjects": [
+        "Introduction to Programming",
+        "Data Structures and Algorithms",
+        "Machine Learning",
+        "Database Systems"
+      ],
+      "careerOpportunities": "This course leads to roles in software development, data analysis, machine learning, and AI.",
+      "entryRequirements": [
+        "Bachelor's degree in a related field",
+        "GRE or GMAT scores",
+        "English proficiency (TOEFL/IELTS)"
+      ],
+      "tuitionFees": "$30,000 - $50,000 per year",
+      "scholarships": "Scholarship opportunities are available at universities like MIT, Stanford, and Harvard."
+    },
+    "business-administration": {
+      "courseName": "Business Administration",
+      "overview": "This course covers the fundamentals of business management, finance, marketing, and strategic planning.",
+      "universities": [
+        { "name": "Harvard Business School", "link": "https://www.hbs.edu/" },
+        { "name": "University of Pennsylvania", "link": "https://www.upenn.edu/" },
+        { "name": "London Business School", "link": "https://www.london.edu/" }
+      ],
+      "subjects": [
+        "Business Strategy",
+        "Financial Management",
+        "Marketing",
+        "Leadership and Organizational Behavior"
+      ],
+      "careerOpportunities": "Graduates can work in management, finance, marketing, or start their own business.",
+      "entryRequirements": [
+        "Bachelor's degree in any field",
+        "GMAT or GRE scores",
+        "Professional work experience"
+      ],
+      "tuitionFees": "$60,000 - $100,000 per year",
+      "scholarships": "Several merit-based scholarships are offered at top business schools."
+    },
+    "medicine": {
+  "courseName": "Medicine",
+  "overview": "The Medicine course trains students to diagnose and treat illnesses, understand human biology, and improve healthcare outcomes.",
+  "universities": [
+    { "name": "Harvard Medical School", "link": "https://hms.harvard.edu/" },
+    { "name": "University of Oxford Medical Sciences", "link": "https://www.medsci.ox.ac.uk/" },
+    { "name": "Johns Hopkins University School of Medicine", "link": "https://www.hopkinsmedicine.org/" }
+  ],
+  "subjects": [
+    "Anatomy and Physiology",
+    "Pathology",
+    "Pharmacology",
+    "Clinical Medicine",
+    "Surgery",
+    "Community Medicine"
+  ],
+  "careerOpportunities": "Graduates can pursue careers as general practitioners, specialists, surgeons, or researchers in medicine and healthcare.",
+  "entryRequirements": [
+    "Bachelor's degree in a science-related field (for graduate entry)",
+    "High school qualifications with strong grades in Biology, Chemistry, and Physics (for undergraduate entry)",
+    "Medical College Admission Test (MCAT) or equivalent",
+    "English proficiency (TOEFL/IELTS)"
+  ],
+  "tuitionFees": "$50,000 - $70,000 per year",
+  "scholarships": "Scholarship opportunities are offered at leading universities like Harvard, Oxford, and Johns Hopkins for outstanding students."
+},
+"engineering": {
+  "courseName": "Engineering",
+  "overview": "The Engineering course provides students with skills to design, analyze, and build innovative solutions in various domains such as technology, infrastructure, and manufacturing.",
+  "universities": [
+    { "name": "Massachusetts Institute of Technology (MIT)", "link": "https://www.mit.edu/" },
+    { "name": "Stanford University", "link": "https://www.stanford.edu/" },
+    { "name": "University of Cambridge", "link": "https://www.cam.ac.uk/" }
+  ],
+  "subjects": [
+    "Mechanical Engineering",
+    "Electrical Engineering",
+    "Civil Engineering",
+    "Computer Engineering",
+    "Chemical Engineering",
+    "Aerospace Engineering"
+  ],
+  "careerOpportunities": "Graduates can work as mechanical engineers, civil engineers, software engineers, consultants, or project managers in industries like automotive, aerospace, and IT.",
+  "entryRequirements": [
+    "Bachelor's degree in Engineering or related field (for postgraduate programs)",
+    "High school qualifications with strong grades in Math, Physics, and Chemistry (for undergraduate entry)",
+    "Standardized tests like GRE (for some universities)",
+    "English proficiency (TOEFL/IELTS)"
+  ],
+  "tuitionFees": "$30,000 - $60,000 per year",
+  "scholarships": "Scholarships are offered by leading institutions like MIT, Stanford, and Cambridge for exceptional students."
+},
+"artsHumanities": {
+  "courseName": "Arts & Humanities",
+  "overview": "The Arts & Humanities course nurtures creativity, critical thinking, and cultural understanding. It covers diverse disciplines, from literature and philosophy to history and performing arts.",
+  "universities": [
+    { "name": "University of Oxford", "link": "https://www.ox.ac.uk/" },
+    { "name": "Harvard University", "link": "https://www.harvard.edu/" },
+    { "name": "University of Toronto", "link": "https://www.utoronto.ca/" }
+  ],
+  "subjects": [
+    "Literature",
+    "Philosophy",
+    "History",
+    "Fine Arts",
+    "Linguistics",
+    "Cultural Studies",
+    "Performing Arts"
+  ],
+  "careerOpportunities": "Graduates can pursue careers in academia, creative writing, publishing, journalism, museum curation, public relations, or cultural consultancy.",
+  "entryRequirements": [
+    "Bachelor's degree in Arts or Humanities (for postgraduate programs)",
+    "High school qualifications with strong grades in English and Social Sciences (for undergraduate entry)",
+    "Portfolio or writing samples (for some creative disciplines)",
+    "English proficiency (TOEFL/IELTS)"
+  ],
+  "tuitionFees": "$20,000 - $50,000 per year",
+  "scholarships": "Scholarships are available from institutions like Oxford and Harvard, as well as regional and subject-specific foundations."
+},
+"law": {
+  "courseName": "Law",
+  "overview": "The Law course provides comprehensive knowledge about legal systems, jurisprudence, and specialized fields such as international law, corporate law, and human rights.",
+  "universities": [
+    { "name": "Yale University", "link": "https://www.yale.edu/" },
+    { "name": "University of Cambridge", "link": "https://www.cam.ac.uk/" },
+    { "name": "University of Melbourne", "link": "https://www.unimelb.edu.au/" }
+  ],
+  "subjects": [
+    "Criminal Law",
+    "Civil Law",
+    "International Law",
+    "Corporate Law",
+    "Constitutional Law",
+    "Human Rights Law",
+    "Environmental Law"
+  ],
+  "careerOpportunities": "Graduates can work as lawyers, legal consultants, corporate advisors, judges, policymakers, or in non-profit organizations advocating for justice.",
+  "entryRequirements": [
+    "Bachelor's degree in law (for postgraduate programs such as LLM)",
+    "High school qualifications with strong grades in Social Sciences or related subjects (for undergraduate entry)",
+    "LSAT or equivalent (for specific programs)",
+    "English proficiency (TOEFL/IELTS)"
+  ],
+  "tuitionFees": "$25,000 - $60,000 per year",
+  "scholarships": "Scholarships are offered by universities like Yale and Cambridge, and by organizations supporting legal education."
+},
+"design": {
+  "courseName": "Design",
+  "overview": "The Design course fosters innovation and creativity across fields like graphic design, industrial design, UI/UX design, and interior design. It equips students with both technical skills and artistic vision.",
+  "universities": [
+    { "name": "Rhode Island School of Design (RISD)", "link": "https://www.risd.edu/" },
+    { "name": "Royal College of Art", "link": "https://www.rca.ac.uk/" },
+    { "name": "Parsons School of Design", "link": "https://www.newschool.edu/parsons/" }
+  ],
+  "subjects": [
+    "Graphic Design",
+    "Industrial Design",
+    "User Experience (UX) Design",
+    "Interior Design",
+    "Fashion Design",
+    "Motion Graphics",
+    "Sustainable Design"
+  ],
+  "careerOpportunities": "Graduates can work as graphic designers, product designers, UX/UI designers, fashion designers, interior architects, or design strategists.",
+  "entryRequirements": [
+    "Bachelor's degree in design or related fields (for postgraduate programs)",
+    "Portfolio showcasing creative work (mandatory for most programs)",
+    "High school qualifications in Arts or equivalent (for undergraduate entry)",
+    "English proficiency (TOEFL/IELTS)"
+  ],
+  "tuitionFees": "$30,000 - $70,000 per year",
+  "scholarships": "Available scholarships include institution-based grants, creative awards, and regional scholarships for design students."
+}
+
+
+
+    // Similarly, add data for "medicine", "engineering", "arts-humanities", "law", "design"
+  };
+  
+  // Event listener for course selection
+  document.getElementById('course-select').addEventListener('change', (event) => {
+    const selectedCourse = event.target.value;
+    const courseDetails = coursesData[selectedCourse];
+  
+    // Update the page content dynamically based on selected course
+    document.getElementById('course-title').innerText = courseDetails.courseName;
+    document.getElementById('course-overview').innerText = courseDetails.overview;
+  
+    // Update top universities
+    const universitiesList = document.getElementById('universities-list');
+    universitiesList.innerHTML = '';
+    courseDetails.universities.forEach(uni => {
+      const li = document.createElement('li');
+      li.innerHTML = `<a href="${uni.link}" target="_blank">${uni.name}</a>`;
+      universitiesList.appendChild(li);
+    });
+  
+    // Update key subjects
+    const subjectsList = document.getElementById('subjects-list');
+    subjectsList.innerHTML = '';
+    courseDetails.subjects.forEach(subject => {
+      const li = document.createElement('li');
+      li.innerText = subject;
+      subjectsList.appendChild(li);
+    });
+  
+    // Update career opportunities
+    document.getElementById('career-opportunities').innerText = courseDetails.careerOpportunities;
+  
+    // Update entry requirements
+    const requirementsList = document.getElementById('requirements-list');
+    requirementsList.innerHTML = '';
+    courseDetails.entryRequirements.forEach(req => {
+      const li = document.createElement('li');
+      li.innerText = req;
+      requirementsList.appendChild(li);
+    });
+  
+    // Update tuition fees and scholarships
+    document.getElementById('tuition-fees').innerText = `Estimated tuition fees: ${courseDetails.tuitionFees}`;
+    document.getElementById('scholarships').innerText = `Available scholarships: ${courseDetails.scholarships}`;
+  });
+  
+  // Initially load details for the first course
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('course-select').value = 'computer-science';
+    document.getElementById('course-select').dispatchEvent(new Event('change'));
+  });
+  
+  </script>
+
+  <script>
+    // JavaScript for Tabs Functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+  
+    // Function to switch tabs
+    function switchTab(event) {
+      // Remove active class from all buttons and contents
+      tabButtons.forEach((btn) => btn.classList.remove('active'));
+      tabContents.forEach((content) => content.classList.remove('active'));
+  
+      // Add active class to the clicked button
+      event.target.classList.add('active');
+  
+      // Show the corresponding tab content
+      const targetTab = event.target.getAttribute('data-tab');
+      document.getElementById(targetTab).classList.add('active');
+    }
+  
+    // Attach event listeners to all tab buttons
+    tabButtons.forEach((btn) => {
+      btn.addEventListener('click', switchTab);
+    });
+  
+    // Default: Show the first tab's content
+    document.querySelector('.tab-btn.active').click();
+  });
+  
+  </script>
+
+</body>
+</html>

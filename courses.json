@@ -1,0 +1,59 @@
+[
+    {
+      "name": "Master’s in Computer Science",
+      "category": "Computer Science",
+      "description": "An advanced program focusing on algorithms, software development, and artificial intelligence.",
+      "universities": ["MIT", "Stanford University", "UC Berkeley"],
+      "average_salary": "$90,000 per year",
+      "duration": "2 years"
+    },
+    {
+      "name": "Master’s in Business Administration",
+      "category": "Business Administration",
+      "description": "A comprehensive program that prepares you for leadership roles in business.",
+      "universities": ["Harvard", "London Business School", "INSEAD"],
+      "average_salary": "$100,000 per year",
+      "duration": "1-2 years"
+    },
+    {
+      "name": "Bachelor’s in Medicine",
+      "category": "Medicine",
+      "description": "An essential course for aspiring doctors, covering medical science and clinical practices.",
+      "universities": ["University of Oxford", "Harvard Medical School", "Stanford School of Medicine"],
+      "average_salary": "$80,000 per year",
+      "duration": "5-6 years"
+    },
+    {
+      "name": "Master’s in Engineering",
+      "category": "Engineering",
+      "description": "An in-depth program for students pursuing careers in mechanical, civil, or electrical engineering.",
+      "universities": ["University of Cambridge", "MIT", "ETH Zurich"],
+      "average_salary": "$85,000 per year",
+      "duration": "2 years"
+    },
+    {
+      "name": "Bachelor’s in Arts & Humanities",
+      "category": "Arts & Humanities",
+      "description": "A program that explores history, philosophy, and cultural studies.",
+      "universities": ["Harvard", "Oxford", "University of Melbourne"],
+      "average_salary": "$50,000 per year",
+      "duration": "3-4 years"
+    },
+    {
+      "name": "Master’s in Law",
+      "category": "Law",
+      "description": "A program for those seeking expertise in international law, criminal law, or corporate law.",
+      "universities": ["Yale Law School", "Harvard Law", "London School of Economics"],
+      "average_salary": "$120,000 per year",
+      "duration": "1 year"
+    },
+    {
+      "name": "Bachelor’s in Design",
+      "category": "Design",
+      "description": "A program that combines creativity with technical skills for aspiring designers.",
+      "universities": ["Rhode Island School of Design", "Parsons School of Design", "University of Arts London"],
+      "average_salary": "$60,000 per year",
+      "duration": "3 years"
+    }
+  ]
+  

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Next Stop: Success!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    :root {
+        --primary-bg: #f0d3f7;
+        --primary-text: #120d31;
+        --secondary-bg: #302f4d;
+        --accent: #a57982;
+        --accent-hover: #d16c809a;
+        --card-bg: #fff;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--primary-bg);
+      color: var(--primary-text);
+    }
+
+    header {
+        background: linear-gradient(90deg, #f0d3f7, #a57982, #302f4d, #120d31);
+        background-size: 400% 400%;
+        animation: gradientShift 5s ease infinite;
+      }
+    
+      @keyframes gradientShift {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+    .hero {
+        background: linear-gradient(45deg, #f0d3f7, #a57982, #302f4d, #120d31);
+        background-size: 400% 400%;
+        animation: gradientAnimation 5s ease infinite;
+        color: white;
+        padding: 100px 20px;
+        text-align: center;
+      }
+    
+      @keyframes gradientAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    
+      .hero h1 {
+        font-size: 4rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        margin-top: 10px;
+      }
+    
+      .hero p {
+        font-size: 1.2rem;
+      }
+
+    .section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 3rem;
+      color: var(--primary-text);
+      margin-bottom: 20px;
+    }
+
+    .about-text {
+      color: var(--primary-text);
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .about-image img:hover {
+      transform: scale(1.05);
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .cta-btn {
+      background-color: var(--accent);
+      color: white;
+      font-size: 1.2rem;
+      padding: 15px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background-color: var(--accent-hover);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 bg-[#302f4d] text-white py-4 shadow-lg z-50">
+    <div class="container mx-auto flex items-center justify-between px-4">
+      <h1 class="text-2xl font-bold" style="font-size:xx-large;">Next Stop: Success!</h1>
+      <!-- Hamburger Menu Button for Mobile -->
+      <button id="menuToggle" class="block md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+      <!-- Desktop Navigation Links -->
+      <nav id="desk" class="hidden md:flex space-x-4">
+        <ul class="flex space-x-4">
+          <li><a href="index.html" class="hover:text-[#b98ea7]"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="scholarship.html" class="hover:text-[#b98ea7]"><i class="fas fa-graduation-cap"></i> Scholarships</a></li>
+          <li><a href="about.html" class="hover:text-[#b98ea7]"><i class="fas fa-info-circle"></i> About Us</a></li>
+          <li><a href="contact.html" class="hover:text-[#b98ea7]"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- Mobile Navigation Links -->
+      <nav id="mobileMenu" class="hidden flex-col md:hidden absolute top-16 left-0 w-full bg-[#302f4d] text-white shadow-lg p-4">
+        <ul class="space-y-4">
+          <li><a href="index.html" class="hover:text-[#b98ea7] block"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="scholarship.html" class="hover:text-[#b98ea7] block"><i class="fas fa-graduation-cap"></i> Scholarships</a></li>
+          <li><a href="about.html" class="hover:text-[#b98ea7] block"><i class="fas fa-info-circle"></i> About Us</a></li>
+          <li><a href="contact.html" class="hover:text-[#b98ea7] block"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+  <!-- Hero Section -->
+<header class="hero py-32 text-center" data-aos="fade-up">
+    <h1 class="text-5xl lg:text-7xl font-bold text-white mb-6">Welcome to Next Stop: Success!</h1>
+    <p class="text-lg lg:text-xl text-gray-200">Empowering students in Hyderabad to achieve their dreams of studying abroad.</p>
+  </header>
+  <!-- About Section -->
+  <section class="section" id="about-us">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div data-aos="fade-right">
+        <h2><i class="fas fa-info-circle"></i> About Us</h2>
+        <p class="about-text">
+          At <span class="text-accent">Next Stop: Success!</span>, we guide students in Hyderabad through the complex journey of applying to study abroad. With resources, scholarships, and personalized support, we ensure students have everything they need to succeed.
+        </p>
+        <p class="about-text">
+          Our team is dedicated to helping students secure scholarships, discover top universities, and gain the knowledge they need for their future academic careers.
+        </p>
+      </div>
+      <div class="about-image" data-aos="fade-left">
+        <img src="assets/hero.webp" alt="About Us" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="section " id="our-values">
+    <h2 data-aos="fade-up">Our Core Values</h2>
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+        <!-- Card 1 -->
+        <div class="card" data-aos="flip-left">
+          <i class="fas fa-compass text-4xl text-accent mb-4"></i>
+          <h3 class="text-xl font-bold text-accent mb-4">Guidance</h3>
+          <p>We provide expert guidance to students at every step of their journey towards higher education abroad.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="card" data-aos="flip-left" data-aos-delay="200">
+          <i class="fas fa-hand-holding-heart text-4xl text-accent mb-4"></i>
+          <h3 class="text-xl font-bold text-accent mb-4">Support</h3>
+          <p>Our dedicated team offers consistent support to students, ensuring they have all the resources needed to succeed.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="card" data-aos="flip-left" data-aos-delay="400">
+          <i class="fas fa-lightbulb text-4xl text-accent mb-4"></i>
+          <h3 class="text-xl font-bold text-accent mb-4">Opportunities</h3>
+          <p>We help students find the best scholarships and opportunities that align with their academic goals and aspirations.</p>
+        </div>
+        
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section text-center bg-gradient-to-t from-black to-accent" id="cta">
+    <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Start Your Journey Today</h2>
+    <p class="text-lg mb-6" data-aos="fade-up" data-aos-delay="200">Let us help you achieve your dreams of studying abroad with the best resources and opportunities.</p>
+    <a href="contact.html" class="cta-btn" data-aos="fade-up" data-aos-delay="400"><i class="fas fa-paper-plane"></i> Contact Us Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-secondary-bg" style="background-color: #120d31; color:#120d31">
+    <div class="container mx-auto text-center">
+      <p class="text-gray-400">&copy; 2025 Next Stop: Success! All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+      
+        menuToggle.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden'); // Toggle the visibility of the mobile menu
+        });
+      
+  </script>
+</body>
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Countries for Higher Education</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0d3f7;
+            color: #120d31;
+        }
+
+        header .back-to-home {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #a57982;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        
+        header .back-to-home:hover {
+            background-color: #d16c809a;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .country-card {
+            display: flex;
+            background: #fff;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 900px;
+            animation: fadeIn 1s;
+        }
+
+        .country-card img {
+            width: 40%;
+            object-fit: cover;
+        }
+
+        .country-details {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .country-details h2 {
+            margin-top: 0;
+            color: #302f4d;
+        }
+
+        .country-details ul {
+            padding-left: 20px;
+            list-style: disc;
+        }
+
+        .country-details .icon-list {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .country-details .icon-list i {
+            margin-right: 10px;
+            color: #302f4d;
+        }
+
+        .country-details .learn-more {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #a57982;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .country-details .learn-more:hover {
+            background-color: #d16c809a;
+        }
+
+        .center-button {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .center-button a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #302f4d;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .center-button a:hover {
+            background-color: #d16c809a;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        header {
+            background: linear-gradient(135deg, #302f4d, #a57982);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header p {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .country-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .scroll-btn {
+            border: none;
+            padding: 12px 20px;
+            margin: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .scroll-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .usa-btn {
+            background-color: #302f4d;
+            color: #fff;
+        }
+
+        .uk-btn {
+            background-color: #a57982;
+            color: #fff;
+        }
+
+        .canada-btn {
+            background-color: #d16c809a;
+            color: #fff;
+        }
+
+        .australia-btn {
+            background-color: #b98ea7;
+            color: #fff;
+        }
+
+        .germany-btn {
+            background-color: #120d31;
+            color: #fff;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('assets/world-map.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            opacity: 0.1;
+            z-index: 0;
+        }
+        @media (max-width: 768px) {
+            header .back-to-home {
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: 10px 0;
+                font-size: 14px;
+                text-align: center;
+                border-radius: 0;
+            }
+            .header-content{
+                padding-top: 20px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header data-aos="fade-down" data-aos-duration="1000">
+        <div class="header-content">
+            <a href="index.html" class="back-to-home">Back to Home</a>
+            <h1>Your Gateway to the World</h1>
+            <p>Explore the top countries for pursuing higher education and achieving your dreams.</p>
+            <div class="country-buttons">
+                <button class="scroll-btn usa-btn" onclick="scrollToCard('usa-card')">USA</button>
+                <button class="scroll-btn uk-btn" onclick="scrollToCard('uk-card')">UK</button>
+                <button class="scroll-btn canada-btn" onclick="scrollToCard('canada-card')">CANADA</button>
+                <button class="scroll-btn australia-btn" onclick="scrollToCard('australia-card')">AUSTRALIA</button>
+                <button class="scroll-btn germany-btn" onclick="scrollToCard('germany-card')">GERMANY</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Country Cards -->
+<!-- top-countries -->
+<div id="usa-card" class="country-card" data-aos="fade-up">
+    <img src="assets/usa.jpg" alt="United States">
+    <div class="country-details">
+        <h2>United States</h2>
+        <p>Top universities and diverse opportunities for international students.</p>
+        <h3>Top Reasons to Study Here</h3>
+        <ul>
+            <li>World-class universities</li>
+            <li>Post-study work options</li>
+            <li>High-quality education</li>
+        </ul>
+        <h3>Popular Master's Courses</h3>
+        <ul>
+            <li>Data Science</li>
+            <li>Engineering</li>
+            <li>MBA</li>
+        </ul>
+        <h3>Top Universities</h3>
+        <ul>
+            <li>Harvard University</li>
+            <li>Stanford University</li>
+            <li>MIT</li>
+        </ul>
+        <h3>Cost Overview</h3>
+        <p><i class="fas fa-dollar-sign"></i> $20,000–$50,000/year</p>
+        <p><i class="fas fa-home"></i> $12,000–$20,000/year</p>
+        <h3>Work Opportunities</h3>
+        <p>Post-graduation work permits.</p>
+        <h3>Culture & Lifestyle</h3>
+        <p>Explore a multicultural society.</p>
+        <a href="usa.html" class="learn-more">Learn More</a>
+    </div>
+</div>
+
+<div id="uk-card" class="country-card" data-aos="fade-up">
+    <img src="assets/uk.jpg" alt="United Kingdom">
+    <div class="country-details">
+        <h2>United Kingdom</h2>
+        <p>Study in prestigious universities with rich cultural heritage.</p>
+        <h3>Top Reasons to Study Here</h3>
+        <ul>
+            <li>Prestigious universities</li>
+            <li>Shorter courses</li>
+            <li>Networking opportunities</li>
+        </ul>
+        <h3>Popular Master's Courses</h3>
+        <ul>
+            <li>Law</li>
+            <li>Business</li>
+            <li>AI</li>
+        </ul>
+        <h3>Top Universities</h3>
+        <ul>
+            <li>Oxford</li>
+            <li>Cambridge</li>
+            <li>Imperial College</li>
+        </ul>
+        <h3>Cost Overview</h3>
+        <p><i class="fas fa-pound-sign"></i> £10,000–£25,000/year</p>
+        <p><i class="fas fa-home"></i> £10,000–£15,000/year</p>
+        <h3>Work Opportunities</h3>
+        <p>Graduate work visas available.</p>
+        <h3>Culture & Lifestyle</h3>
+        <p>Vibrant cities and historic landmarks.</p>
+        <a href="uk.html" class="learn-more">Learn More</a>
+    </div>
+</div>
+
+<div id="canada-card" class="country-card" data-aos="fade-up">
+    <img src="assets/canada.jpg" alt="Canada">
+    <div class="country-details">
+        <h2>Canada</h2>
+        <p>Affordable education with a welcoming atmosphere.</p>
+        <h3>Top Reasons to Study Here</h3>
+        <ul>
+            <li>Affordable education</li>
+            <li>Immigration-friendly</li>
+            <li>Safe environment</li>
+        </ul>
+        <h3>Popular Master's Courses</h3>
+        <ul>
+            <li>Computer Science</li>
+            <li>Environmental Studies</li>
+            <li>Healthcare</li>
+        </ul>
+        <h3>Top Universities</h3>
+        <ul>
+            <li>University of Toronto</li>
+            <li>UBC</li>
+            <li>McGill University</li>
+        </ul>
+        <h3>Cost Overview</h3>
+        <p><i class="fas fa-dollar-sign"></i> CAD 15,000–35,000/year</p>
+        <p><i class="fas fa-home"></i> CAD 10,000–15,000/year</p>
+        <h3>Work Opportunities</h3>
+        <p>Post-graduation work permits.</p>
+        <h3>Culture & Lifestyle</h3>
+        <p>Outdoor and cultural experiences.</p>
+        <a href="canada.html" class="learn-more">Learn More</a>
+    </div>
+</div>
+
+<div id="australia-card" class="country-card" data-aos="fade-up">
+    <img src="assets/aus.jpg" alt="Australia">
+    <div class="country-details">
+        <h2>Australia</h2>
+        <p>Top universities with a vibrant student life.</p>
+        <h3>Top Reasons to Study Here</h3>
+        <ul>
+            <li>Recognized qualifications</li>
+            <li>Internship opportunities</li>
+            <li>High quality of life</li>
+        </ul>
+        <h3>Popular Master's Courses</h3>
+        <ul>
+            <li>IT</li>
+            <li>Biotech</li>
+            <li>Accounting</li>
+        </ul>
+        <h3>Top Universities</h3>
+        <ul>
+            <li>University of Melbourne</li>
+            <li>ANU</li>
+            <li>University of Sydney</li>
+        </ul>
+        <h3>Cost Overview</h3>
+        <p><i class="fas fa-dollar-sign"></i> AUD 20,000–45,000/year</p>
+        <p><i class="fas fa-home"></i> AUD 15,000–25,000/year</p>
+        <h3>Work Opportunities</h3>
+        <p>Work visas available.</p>
+        <h3>Culture & Lifestyle</h3>
+        <p>Outdoor lifestyle and iconic landmarks.</p>
+        <a href="aus.html" class="learn-more">Learn More</a>
+    </div>
+</div>
+
+<div id="germany-card" class="country-card" data-aos="fade-up">
+    <img src="assets/germany.jpg" alt="Germany">
+    <div class="country-details">
+        <h2>Germany</h2>
+        <p>Low-cost education with a focus on research.</p>
+        <h3>Top Reasons to Study Here</h3>
+        <ul>
+            <li>Free or low-cost education</li>
+            <li>Research-driven</li>
+            <li>Globally recognized degrees</li>
+        </ul>
+        <h3>Popular Master's Courses</h3>
+        <ul>
+            <li>Engineering</li>
+            <li>Robotics</li>
+            <li>Renewable Energy</li>
+        </ul>
+        <h3>Top Universities</h3>
+        <ul>
+            <li>TUM</li>
+            <li>Heidelberg</li>
+            <li>LMU Munich</li>
+        </ul>
+        <h3>Cost Overview</h3>
+        <p><i class="fas fa-euro-sign"></i> €0–€3,000/year</p>
+        <p><i class="fas fa-home"></i> €8,000–12,000/year</p>
+        <h3>Work Opportunities</h3>
+        <p>Post-study work permits.</p>
+        <h3>Culture & Lifestyle</h3>
+        <p>Cultural landmarks and sustainability.</p>
+        <a href="germany.html" class="learn-more">Learn More</a>
+    </div>
+</div>
+
+
+    <!-- Content remains the same as provided -->
+
+    <div class="center-button">
+        <a href="index.html">Back to Home</a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        function scrollToCard(cardId) {
+            const card = document.getElementById(cardId);
+            if (card) {
+                card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+    

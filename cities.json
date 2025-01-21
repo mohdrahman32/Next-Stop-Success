@@ -1,0 +1,808 @@
+{
+        "USA": {
+            "Level-1": [
+                {
+                    "placeName": "New York City",
+                    "image": "cities/newyork.jpg",
+                    "overview": "New York City, a global hub for education, finance, and culture, offers top-tier universities and endless opportunities.",
+                    "keyFeatures": [
+                        "Prestigious universities like Columbia University and NYU",
+                        "Diverse industries with a strong job market",
+                        "Vibrant cultural and entertainment options"
+                    ],
+                    "livingExpenses": "$25,000/year",
+                    "studentFriendly": "Highly multicultural and dynamic city",
+                    "workOpportunities": "Ample part-time jobs and internships in business, tech, and arts",
+                    "connectivity": "Extensive public transportation system",
+                    "environmentForIndianStudents": "Large Indian community with cultural events and Indian restaurants",
+                    "crimeRate": "Moderate",
+                    "callToAction": "https://www.studyinnewyork.com"
+                },
+                {
+                    "placeName": "Boston",
+                    "image": "cities/boston.jpg",
+                    "overview": "Boston, known for its academic excellence, is home to world-renowned universities and a rich historical legacy.",
+                    "keyFeatures": [
+                        "Top institutions like Harvard and MIT",
+                        "Strong focus on innovation and research",
+                        "Historical landmarks and cultural experiences"
+                    ],
+                    "livingExpenses": "$24,000/year",
+                    "studentFriendly": "Academic-focused environment with extensive student services",
+                    "workOpportunities": "Excellent opportunities in biotech, healthcare, and education",
+                    "connectivity": "Efficient public transport and walkable city",
+                    "environmentForIndianStudents": "Supportive academic community with active Indian student groups",
+                    "crimeRate": "Low",
+                    "callToAction": "https://www.studyboston.com"
+                },
+                {
+                    "placeName": "San Francisco",
+                    "image": "cities/sanfrancisco.jpg",
+                    "overview": "San Francisco, the heart of Silicon Valley, is a technology and innovation hub with leading universities.",
+                    "keyFeatures": [
+                        "Universities like Stanford and UC Berkeley",
+                        "Global center for technology and startups",
+                        "Beautiful landscapes and vibrant cultural scene"
+                    ],
+                    "livingExpenses": "$26,000/year",
+                    "studentFriendly": "Tech-focused with ample opportunities for networking",
+                    "workOpportunities": "Numerous internships and jobs in tech, startups, and business",
+                    "connectivity": "Well-connected public transport",
+                    "environmentForIndianStudents": "Inclusive environment with a thriving Indian community",
+                    "crimeRate": "Moderate",
+                    "callToAction": "https://www.studyinsanfrancisco.com"
+                }
+            ],
+            "Level-2": [
+                {
+                    "placeName": "Chicago",
+                    "image": "cities/chicago.jpg",
+                    "overview": "Chicago, a major financial and cultural hub, offers excellent universities and a vibrant urban lifestyle.",
+                    "keyFeatures": [
+                        "Universities like University of Chicago and Northwestern University",
+                        "Rich arts, culture, and music scenes",
+                        "Opportunities in finance, healthcare, and tech"
+                    ],
+                    "livingExpenses": "$20,000/year",
+                    "studentFriendly": "Affordable compared to other major cities with strong student support",
+                    "workOpportunities": "Growing opportunities in finance and consulting",
+                    "connectivity": "Robust public transport system",
+                    "environmentForIndianStudents": "Diverse and welcoming with many Indian restaurants",
+                    "crimeRate": "Moderate",
+                    "callToAction": "https://www.studyinchicago.com"
+                },
+                {
+                    "placeName": "Austin",
+                    "image": "cities/austin.jpg",
+                    "overview": "Austin, a fast-growing tech and cultural hub, combines excellent educational institutions with a laid-back lifestyle.",
+                    "keyFeatures": [
+                        "University of Texas at Austin and other renowned institutions",
+                        "Strong focus on tech and startups",
+                        "Vibrant music and food scenes"
+                    ],
+                    "livingExpenses": "$18,000/year",
+                    "studentFriendly": "Affordable and welcoming with a lively student community",
+                    "workOpportunities": "Opportunities in tech and government sectors",
+                    "connectivity": "Efficient public transport and bike-friendly city",
+                    "environmentForIndianStudents": "Warm and inclusive, with active Indian student groups",
+                    "crimeRate": "Low",
+                    "callToAction": "https://www.studyaustin.com"
+                },
+                {
+                    "placeName": "Seattle",
+                    "image": "cities/seattle.jpg",
+                    "overview": "Seattle, known for its tech scene and beautiful landscapes, is home to leading universities and global corporations.",
+                    "keyFeatures": [
+                        "University of Washington and other top institutions",
+                        "Global headquarters for companies like Amazon and Microsoft",
+                        "Proximity to national parks and outdoor activities"
+                    ],
+                    "livingExpenses": "$22,000/year",
+                    "studentFriendly": "Tech-oriented with ample networking opportunities",
+                    "workOpportunities": "Excellent opportunities in tech and engineering",
+                    "connectivity": "Reliable public transportation",
+                    "environmentForIndianStudents": "Inclusive environment with a supportive Indian community",
+                    "crimeRate": "Moderate",
+                    "callToAction": "https://www.studyseattle.com"
+                }
+            ],
+            "Level-3": [
+                {
+                    "placeName": "Pittsburgh",
+                    "image": "cities/pittsburgh.jpg",
+                    "overview": "Pittsburgh, known for its innovation and research, offers affordable living and quality education.",
+                    "keyFeatures": [
+                        "Carnegie Mellon University and University of Pittsburgh",
+                        "Affordable housing and lifestyle",
+                        "Growing focus on robotics and healthcare"
+                    ],
+                    "livingExpenses": "$16,000/year",
+                    "studentFriendly": "Close-knit community with strong academic focus",
+                    "workOpportunities": "Opportunities in robotics, healthcare, and engineering",
+                    "connectivity": "Compact and easy to navigate",
+                    "environmentForIndianStudents": "Welcoming environment with cultural events",
+                    "crimeRate": "Low",
+                    "callToAction": "https://www.studypittsburgh.com"
+                },
+                {
+                    "placeName": "Raleigh",
+                    "image": "cities/raleigh.jpg",
+                    "overview": "Raleigh, part of the Research Triangle, offers affordable education and growing job markets in tech and research.",
+                    "keyFeatures": [
+                        "North Carolina State University and nearby institutions",
+                        "Focus on research and technology",
+                        "Affordable cost of living"
+                    ],
+                    "livingExpenses": "$15,000/year",
+                    "studentFriendly": "Welcoming and research-oriented",
+                    "workOpportunities": "Opportunities in research and technology",
+                    "connectivity": "Efficient local transport",
+                    "environmentForIndianStudents": "Inclusive with a developing Indian community",
+                    "crimeRate": "Very low",
+                    "callToAction": "https://www.studyraleigh.com"
+                },
+                {
+                    "placeName": "Salt Lake City",
+                    "image": "cities/saltlake.jpg",
+                    "overview": "Salt Lake City offers scenic beauty, affordable living, and growing opportunities in healthcare and tech.",
+                    "keyFeatures": [
+                        "University of Utah and other institutions",
+                        "Focus on healthcare and technology",
+                        "Proximity to outdoor recreational activities"
+                    ],
+                    "livingExpenses": "$14,000/year",
+                    "studentFriendly": "Affordable and peaceful environment",
+                    "workOpportunities": "Opportunities in healthcare and technology",
+                    "connectivity": "Compact city with accessible transportation",
+                    "environmentForIndianStudents": "Supportive but smaller Indian community",
+                    "crimeRate": "Very low",
+                    "callToAction": "https://www.studysaltlakecity.com"
+                }
+            ]
+        },
+        "UK": {
+        "Level-1": [
+            {
+                "placeName": "London",
+                "image": "cities/london.jpeg",
+                "overview": "London, the capital of the UK, is a global hub for education, culture, and finance, offering top-ranked universities and unparalleled opportunities.",
+                "keyFeatures": [
+                    "Top universities like Imperial College London and University College London (UCL)",
+                    "Diverse industries with strong employability in finance, tech, and arts",
+                    "Rich cultural and historical landmarks"
+                ],
+                "livingExpenses": "£15,000/year",
+                "studentFriendly": "Highly multicultural with extensive international student support",
+                "workOpportunities": "Part-time jobs and internships in finance, tech, and media",
+                "connectivity": "Excellent public transport including Underground and buses",
+                "environmentForIndianStudents": "Large Indian community with Indian restaurants, groceries, and cultural events",
+                "crimeRate": "Moderate in some areas, low in most student-friendly neighborhoods",
+                "callToAction": "https://www.studyinlondon.ac.uk"
+            },
+            {
+                "placeName": "Oxford",
+                "image": "cities/oxford.jpeg",
+                "overview": "Oxford is renowned for its prestigious university, academic excellence, and picturesque setting.",
+                "keyFeatures": [
+                    "Home to the University of Oxford, one of the world’s oldest universities",
+                    "Strong emphasis on research and innovation",
+                    "Charming city with a rich history"
+                ],
+                "livingExpenses": "£14,000/year",
+                "studentFriendly": "Safe and supportive academic environment",
+                "workOpportunities": "Opportunities in education, research, and consulting",
+                "connectivity": "Efficient bus services and proximity to London",
+                "environmentForIndianStudents": "Supportive academic and social environment with growing Indian student groups",
+                "crimeRate": "Very low",
+                "callToAction": "https://www.ox.ac.uk"
+            },
+            {
+                "placeName": "Cambridge",
+                "image": "cities/cambridge.jpg",
+                "overview": "Cambridge offers a rich academic heritage with a serene environment, ideal for focused studies.",
+                "keyFeatures": [
+                    "University of Cambridge, known for academic rigor",
+                    "World-leading research facilities",
+                    "Beautiful architecture and historical landmarks"
+                ],
+                "livingExpenses": "£14,500/year",
+                "studentFriendly": "Highly focused academic community",
+                "workOpportunities": "Opportunities in research, biotech, and academia",
+                "connectivity": "Well-connected by trains and buses",
+                "environmentForIndianStudents": "Welcoming environment with a growing Indian community",
+                "crimeRate": "Very low",
+                "callToAction": "https://www.cam.ac.uk"
+            }
+        ],
+        "Level-2": [
+            {
+                "placeName": "Manchester",
+                "image": "cities/manchester.jpg",
+                "overview": "Manchester, a vibrant city in the UK, is known for its excellent universities, music scene, and football culture.",
+                "keyFeatures": [
+                    "Universities like the University of Manchester and Manchester Metropolitan University",
+                    "Strong industries in healthcare, engineering, and business",
+                    "Rich cultural and sports history"
+                ],
+                "livingExpenses": "£12,000/year",
+                "studentFriendly": "Affordable and lively, with excellent student services",
+                "workOpportunities": "Growing opportunities in healthcare, engineering, and IT",
+                "connectivity": "Well-connected by buses and trams",
+                "environmentForIndianStudents": "Large Indian community with festivals and cultural events",
+                "crimeRate": "Moderate",
+                "callToAction": "https://www.studyinmanchester.com"
+            },
+            {
+                "placeName": "Edinburgh",
+                "image": "cities/edinburgh.jpg",
+                "overview": "Edinburgh, the capital of Scotland, is a city rich in history, culture, and academic excellence.",
+                "keyFeatures": [
+                    "Home to the University of Edinburgh and Heriot-Watt University",
+                    "Stunning landscapes and historical landmarks",
+                    "Opportunities in finance, research, and tourism"
+                ],
+                "livingExpenses": "£13,000/year",
+                "studentFriendly": "Safe and picturesque, ideal for international students",
+                "workOpportunities": "Growing job market in finance and tourism",
+                "connectivity": "Excellent public transportation and walkable city",
+                "environmentForIndianStudents": "Welcoming with a supportive academic community",
+                "crimeRate": "Low",
+                "callToAction": "https://www.studyinedinburgh.com"
+            },
+            {
+                "placeName": "Birmingham",
+                "image": "cities/birmingham.jpg",
+                "overview": "Birmingham is a dynamic city with a rich cultural heritage and strong academic institutions.",
+                "keyFeatures": [
+                    "Universities like the University of Birmingham and Aston University",
+                    "Affordable cost of living compared to London",
+                    "Opportunities in manufacturing, business, and healthcare"
+                ],
+                "livingExpenses": "£11,000/year",
+                "studentFriendly": "Affordable and diverse with a friendly student community",
+                "workOpportunities": "Opportunities in manufacturing, business, and healthcare",
+                "connectivity": "Extensive public transport network",
+                "environmentForIndianStudents": "Large Indian population and cultural events",
+                "crimeRate": "Moderate",
+                "callToAction": "https://www.studybirmingham.com"
+            }
+        ],
+        "Level-3": [
+            {
+                "placeName": "Coventry",
+                "image": "cities/coventry.jpg",
+                "overview": "Coventry is a smaller city offering affordable living, quality education, and a welcoming atmosphere.",
+                "keyFeatures": [
+                    "Home to Coventry University and Warwick University nearby",
+                    "Affordable cost of living",
+                    "Peaceful environment ideal for studies"
+                ],
+                "livingExpenses": "£10,000/year",
+                "studentFriendly": "Quiet and affordable with good support for students",
+                "workOpportunities": "Opportunities in research and local industries",
+                "connectivity": "Compact and well-connected by buses",
+                "environmentForIndianStudents": "Small but welcoming Indian community",
+                "crimeRate": "Low",
+                "callToAction": "https://www.coventry.ac.uk"
+            },
+            {
+                "placeName": "Nottingham",
+                "image": "cities/nottingham.jpg",
+                "overview": "Nottingham offers a blend of historical charm and modern educational facilities.",
+                "keyFeatures": [
+                    "Universities like the University of Nottingham and Nottingham Trent University",
+                    "Affordable housing and student-friendly facilities",
+                    "Opportunities in healthcare, IT, and engineering"
+                ],
+                "livingExpenses": "£10,500/year",
+                "studentFriendly": "Lively and welcoming with excellent student services",
+                "workOpportunities": "Opportunities in healthcare and research",
+                "connectivity": "Efficient public transport system",
+                "environmentForIndianStudents": "Friendly with good cultural support",
+                "crimeRate": "Low",
+                "callToAction": "https://www.studyinnottingham.com"
+            },
+            {
+                "placeName": "Leicester",
+                "image": "cities/leicester.jpg",
+                "overview": "Leicester is a multicultural city with affordable education and a rich cultural heritage.",
+                "keyFeatures": [
+                    "Universities like the University of Leicester and De Montfort University",
+                    "Affordable living costs",
+                    "Multicultural environment with strong community ties"
+                ],
+                "livingExpenses": "£9,500/year",
+                "studentFriendly": "Highly welcoming for international students",
+                "workOpportunities": "Opportunities in retail, manufacturing, and healthcare",
+                "connectivity": "Compact and well-connected by buses",
+                "environmentForIndianStudents": "Strong Indian presence with cultural festivals and events",
+                "crimeRate": "Very low",
+                "callToAction": "https://www.studyinleicester.com"
+            }
+        ]
+    },
+    "Canada": {
+        "Level-1": [
+            {
+                "placeName": "Toronto",
+                "image": "cities/toronto.jpg",
+                "overview": "Toronto, Canada's largest city, is a global hub for finance, culture, and education, offering a multicultural environment and top-ranked universities.",
+                "keyFeatures": [
+                    "Top universities like the University of Toronto and York University",
+                    "Strong job market in technology, finance, and healthcare",
+                    "Diverse cultural and social opportunities"
+                ],
+                "livingExpenses": "CAD $20,000/year",
+                "studentFriendly": "Highly multicultural with extensive international student support",
+                "workOpportunities": "Plenty of part-time jobs and internships in tech and finance",
+                "connectivity": "Excellent public transit system including TTC, trains, and buses",
+                "environmentForIndianStudents": "Large Indian community with Indian grocery stores and restaurants",
+                "crimeRate": "Moderate in some areas, low in most student-friendly neighborhoods",
+                "callToAction": "https://www.studyintoronto.com"
+            },
+            {
+                "placeName": "Vancouver",
+                "image": "cities/vancouver.jpg",
+                "overview": "Vancouver is known for its stunning natural beauty, high-quality education, and thriving job market in technology and environmental sectors.",
+                "keyFeatures": [
+                    "Universities like the University of British Columbia (UBC) and Simon Fraser University",
+                    "Opportunities in technology, film, and sustainability industries",
+                    "Mild climate and access to outdoor activities"
+                ],
+                "livingExpenses": "CAD $22,000/year",
+                "studentFriendly": "Safe, scenic, and welcoming for international students",
+                "workOpportunities": "Growing opportunities in IT, environmental sciences, and media",
+                "connectivity": "Well-connected by SkyTrain and buses",
+                "environmentForIndianStudents": "Friendly and inclusive with a strong Indian presence",
+                "crimeRate": "Low",
+                "callToAction": "https://www.studyinvancouver.ca"
+            },
+            {
+                "placeName": "Montreal",
+                "image": "cities/montreal.jpg",
+                "overview": "Montreal is a vibrant, bilingual city known for its rich culture, history, and world-class universities.",
+                "keyFeatures": [
+                    "Universities like McGill University and Concordia University",
+                    "Affordable living costs and tuition fees",
+                    "Hub for research, aerospace, and AI industries"
+                ],
+                "livingExpenses": "CAD $15,000/year",
+                "studentFriendly": "Highly welcoming with affordable education and vibrant culture",
+                "workOpportunities": "Strong job market in AI, aerospace, and research",
+                "connectivity": "Efficient public transit system",
+                "environmentForIndianStudents": "Friendly and inclusive with a growing Indian student community",
+                "crimeRate": "Low",
+                "callToAction": "https://www.studyinmontreal.ca"
+            }
+        ],
+        "Level-2": [
+            {
+                "placeName": "Calgary",
+                "image": "cities/calgary.jpg",
+                "overview": "Calgary is an affordable city offering excellent educational opportunities and a strong job market in energy and engineering.",
+                "keyFeatures": [
+                    "Home to the University of Calgary",
+                    "Opportunities in oil and gas, engineering, and renewable energy",
+                    "Access to the Rocky Mountains for outdoor activities"
+                ],
+                "livingExpenses": "CAD $14,000/year",
+                "studentFriendly": "Affordable and safe with growing international student support",
+                "workOpportunities": "Ample opportunities in energy and technology sectors",
+                "connectivity": "Efficient public transportation",
+                "environmentForIndianStudents": "Small but growing Indian community",
+                "crimeRate": "Low",
+                "callToAction": "https://www.studycalgary.ca"
+            },
+            {
+                "placeName": "Ottawa",
+                "image": "cities/ottawa.jpg",
+                "overview": "Ottawa, Canada’s capital, offers a balanced lifestyle with a focus on education, technology, and government jobs.",
+                "keyFeatures": [
+                    "Universities like the University of Ottawa and Carleton University",
+                    "Strong job market in public administration and IT",
+                    "Rich cultural heritage and festivals"
+                ],
+                "livingExpenses": "CAD $16,000/year",
+                "studentFriendly": "Safe and affordable, ideal for international students",
+                "workOpportunities": "Ample government and IT sector jobs",
+                "connectivity": "Well-connected public transit",
+                "environmentForIndianStudents": "Supportive with Indian grocery stores and cultural events",
+                "crimeRate": "Very low",
+                "callToAction": "https://www.studyottawa.ca"
+            },
+            {
+                "placeName": "Edmonton",
+                "image": "cities/edmonton.jpg",
+                "overview": "Edmonton, the capital of Alberta, offers affordable education and a growing job market in healthcare and technology.",
+                "keyFeatures": [
+                    "Home to the University of Alberta",
+                    "Opportunities in healthcare, engineering, and research",
+                    "Affordable cost of living with a focus on education"
+                ],
+                "livingExpenses": "CAD $13,000/year",
+                "studentFriendly": "Cost-effective and welcoming for international students",
+                "workOpportunities": "Growing opportunities in research and healthcare",
+                "connectivity": "Reliable public transportation",
+                "environmentForIndianStudents": "Warm and supportive with Indian student groups",
+                "crimeRate": "Low",
+                "callToAction": "https://www.studyedmonton.ca"
+            }
+        ],
+        "Level-3": [
+            {
+                "placeName": "Halifax",
+                "image": "cities/halifax.jpg",
+                "overview": "Halifax is a smaller city with affordable education, a peaceful environment, and opportunities in marine studies.",
+                "keyFeatures": [
+                    "Home to Dalhousie University",
+                    "Focus on marine and environmental sciences",
+                    "Affordable living costs and beautiful coastal surroundings"
+                ],
+                "livingExpenses": "CAD $11,000/year",
+                "studentFriendly": "Quiet and affordable, ideal for focused studies",
+                "workOpportunities": "Opportunities in research and local industries",
+                "connectivity": "Compact city with accessible transportation",
+                "environmentForIndianStudents": "Supportive with a small Indian community",
+                "crimeRate": "Very low",
+                "callToAction": "https://www.dal.ca"
+            },
+            {
+                "placeName": "Saskatoon",
+                "image": "cities/saskatoon.jpg",
+                "overview": "Saskatoon is a peaceful city offering affordable education and opportunities in agriculture and engineering.",
+                "keyFeatures": [
+                    "University of Saskatchewan",
+                    "Focus on agriculture, engineering, and research",
+                    "Relaxed lifestyle with a close-knit community"
+                ],
+                "livingExpenses": "CAD $10,000/year",
+                "studentFriendly": "Affordable and supportive for international students",
+                "workOpportunities": "Limited opportunities in agriculture and research",
+                "connectivity": "Basic transportation system",
+                "environmentForIndianStudents": "Small but welcoming Indian community",
+                "crimeRate": "Very low",
+                "callToAction": "https://www.usask.ca"
+            },
+            {
+                "placeName": "Winnipeg",
+                "image": "cities/winnipeg.jpg",
+                "overview": "Winnipeg is an affordable city offering education and opportunities in healthcare and engineering.",
+                "keyFeatures": [
+                    "Home to the University of Manitoba",
+                    "Opportunities in healthcare, engineering, and research",
+                    "Affordable living costs with a growing student community"
+                ],
+                "livingExpenses": "CAD $10,500/year",
+                "studentFriendly": "Cost-effective and welcoming for international students",
+                "workOpportunities": "Growing opportunities in healthcare and engineering",
+                "connectivity": "Basic transportation network",
+                "environmentForIndianStudents": "Friendly and inclusive with a small Indian population",
+                "crimeRate": "Low",
+                "callToAction": "https://www.umanitoba.ca"
+            }
+        ]
+    },   
+    "Australia": {
+    "Level-1": [
+        {
+            "placeName": "Melbourne",
+            "image": "cities/melbourne.jpg",
+            "overview": "Melbourne, the cultural capital of Australia, is home to top-ranked universities, diverse industries, and a vibrant student lifestyle.",
+            "keyFeatures": [
+                "World-class universities like University of Melbourne and Monash University",
+                "Thriving cultural and arts scene",
+                "High employability in technology, healthcare, and business sectors"
+            ],
+            "livingExpenses": "$18,000/year",
+            "studentFriendly": "Rated as one of the best cities for international students",
+            "workOpportunities": "Internships, part-time jobs, and post-graduation opportunities",
+            "connectivity": "Well-connected by trams, trains, and buses",
+            "environmentForIndianStudents": "Supportive, with a large Indian community and Indian restaurants",
+            "crimeRate": "Low",
+            "callToAction": "https://www.study.melbourne.vic.gov.au"
+        },
+        {
+            "placeName": "Sydney",
+            "image": "cities/sydney.webp",
+            "overview": "Sydney, Australia's financial hub, is known for its iconic landmarks, high-ranked universities, and strong job market.",
+            "keyFeatures": [
+                "Top universities like the University of Sydney and UNSW",
+                "Global business and technology hubs",
+                "Beautiful beaches and iconic landmarks like the Sydney Opera House"
+            ],
+            "livingExpenses": "$20,000/year",
+            "studentFriendly": "Highly multicultural with extensive international student support",
+            "workOpportunities": "Ample part-time jobs and internships in finance, IT, and engineering",
+            "connectivity": "Efficient public transport system",
+            "environmentForIndianStudents": "Friendly and inclusive, with strong Indian community presence",
+            "crimeRate": "Moderate in some areas, low overall",
+            "callToAction": "https://www.study.sydney"
+        },
+        {
+            "placeName": "Canberra",
+            "image": "cities/canberra.jpg",
+            "overview": "Canberra, the capital of Australia, offers a serene academic environment with prestigious institutions and a high quality of life.",
+            "keyFeatures": [
+                "Australian National University (ANU), ranked among the top globally",
+                "Peaceful and well-planned city ideal for studies",
+                "Opportunities in government and research sectors"
+            ],
+            "livingExpenses": "$17,000/year",
+            "studentFriendly": "Quiet and academically oriented environment",
+            "workOpportunities": "Part-time and internship opportunities, especially in public administration",
+            "connectivity": "Excellent public transportation",
+            "environmentForIndianStudents": "Calm environment with good student support",
+            "crimeRate": "Very low",
+            "callToAction": "https://www.studycanberra.com.au"
+        }
+    ],
+    "Level-2": [
+        {
+            "placeName": "Brisbane",
+            "image": "cities/brisbane.jpg",
+            "overview": "Brisbane, the capital of Queensland, offers affordable living, top universities, and a laid-back lifestyle.",
+            "keyFeatures": [
+                "Home to University of Queensland (UQ)",
+                "Subtropical climate with year-round outdoor activities",
+                "Emerging tech and startup hub"
+            ],
+            "livingExpenses": "$15,000/year",
+            "studentFriendly": "Affordable and friendly environment for international students",
+            "workOpportunities": "Growing opportunities in tech, business, and health sectors",
+            "connectivity": "Reliable public transport system",
+            "environmentForIndianStudents": "Warm and welcoming community",
+            "crimeRate": "Moderate",
+            "callToAction": "https://www.studybrisbane.com.au"
+        },
+        {
+            "placeName": "Adelaide",
+            "image": "cities/adelaide.jpg",
+            "overview": "Adelaide is known for its affordable lifestyle, excellent educational institutions, and a vibrant food and wine culture.",
+            "keyFeatures": [
+                "Universities like University of Adelaide and University of South Australia",
+                "Lower cost of living compared to major cities",
+                "Focus on arts, culture, and research"
+            ],
+            "livingExpenses": "$14,000/year",
+            "studentFriendly": "Cost-effective and welcoming for students",
+            "workOpportunities": "Growing industries in defense, healthcare, and arts",
+            "connectivity": "Well-organized public transport",
+            "environmentForIndianStudents": "Friendly and low cost, with good community support",
+            "crimeRate": "Low",
+            "callToAction": "https://www.studyadelaide.com"
+        },
+        {
+            "placeName": "Perth",
+            "image": "cities/perth.jpg",
+            "overview": "Perth offers stunning natural beauty, leading universities, and a growing job market, especially in mining and engineering.",
+            "keyFeatures": [
+                "Home to the University of Western Australia (UWA)",
+                "Booming industries in mining and engineering",
+                "Relaxed lifestyle with access to beaches and outdoor activities"
+            ],
+            "livingExpenses": "$16,000/year",
+            "studentFriendly": "Safe and welcoming with a strong international student presence",
+            "workOpportunities": "Opportunities in mining, engineering, and technology",
+            "connectivity": "Efficient bus and train networks",
+            "environmentForIndianStudents": "Great weather and good job opportunities",
+            "crimeRate": "Low",
+            "callToAction": "https://www.studyperth.com.au"
+        }
+    ],
+    "Level-3": [
+        {
+            "placeName": "Hobart",
+            "image": "cities/hobart.jpg",
+            "overview": "Hobart, Tasmania's capital, offers a peaceful setting, affordable education, and a growing focus on environmental sciences.",
+            "keyFeatures": [
+                "University of Tasmania (UTAS)",
+                "Focus on environmental and marine sciences",
+                "Scenic landscapes and a calm lifestyle"
+            ],
+            "livingExpenses": "$12,000/year",
+            "studentFriendly": "Affordable and quiet, ideal for focused studies",
+            "workOpportunities": "Limited opportunities but growing in research and tourism",
+            "connectivity": "Smaller city with efficient local transport",
+            "environmentForIndianStudents": "Quiet and peaceful with limited Indian community",
+            "crimeRate": "Very low",
+            "callToAction": "https://www.utas.edu.au"
+        },
+        {
+            "placeName": "Darwin",
+            "image": "cities/darwin.jpg",
+            "overview": "Darwin is a small, culturally diverse city offering affordable education and opportunities in tourism and agriculture.",
+            "keyFeatures": [
+                "Charles Darwin University (CDU)",
+                "Focus on tourism, agriculture, and indigenous studies",
+                "Proximity to natural wonders like Kakadu National Park"
+            ],
+            "livingExpenses": "$10,000/year",
+            "studentFriendly": "Affordable and multicultural",
+            "workOpportunities": "Opportunities in agriculture, tourism, and public services",
+            "connectivity": "Compact city with accessible transport",
+            "environmentForIndianStudents": "Small Indian community with limited resources",
+            "crimeRate": "Low",
+            "callToAction": "https://www.cdu.edu.au"
+        },
+        {
+            "placeName": "Townsville",
+            "image": "cities/townsville.jpg",
+            "overview": "Townsville is known for its tropical climate, natural beauty, and emerging educational infrastructure.",
+            "keyFeatures": [
+                "James Cook University (JCU)",
+                "Focus on marine biology and tropical studies",
+                "Relaxed lifestyle with easy access to the Great Barrier Reef"
+            ],
+            "livingExpenses": "$11,000/year",
+            "studentFriendly": "Close-knit and welcoming for international students",
+            "workOpportunities": "Opportunities in marine research and tourism",
+            "connectivity": "Small city with basic transportation services",
+            "environmentForIndianStudents": "Good for students seeking a quiet academic focus",
+            "crimeRate": "Very low",
+            "callToAction": "https://www.jcu.edu.au"
+        }
+    ]
+},
+"Germany": {
+        "Level-1": [
+            {
+                "placeName": "Berlin",
+                "image": "cities/berlin.jpg",
+                "overview": "Berlin, the capital of Germany, is a global city known for its history, vibrant culture, and world-class universities.",
+                "keyFeatures": [
+                    "Top universities like Technical University of Berlin (TU Berlin) and Humboldt University",
+                    "Diverse cultural scene and historic landmarks",
+                    "Strong job market in technology, engineering, and startups"
+                ],
+                "livingExpenses": "€12,000/year",
+                "studentFriendly": "Highly multicultural with plenty of opportunities for international students",
+                "workOpportunities": "Ample part-time jobs and internships in IT, media, and research sectors",
+                "connectivity": "Excellent public transport with U-Bahn, S-Bahn, and buses",
+                "environmentForIndianStudents": "Supportive, with a growing Indian community and cultural events",
+                "crimeRate": "Moderate in some areas, low overall",
+                "callToAction": "https://www.study-in-berlin.de"
+            },
+            {
+                "placeName": "Munich",
+                "image": "cities/munich.jpg",
+                "overview": "Munich, a major economic hub, is renowned for its universities, safety, and high quality of life.",
+                "keyFeatures": [
+                    "Home to Technical University of Munich (TUM) and Ludwig Maximilian University (LMU)",
+                    "Opportunities in automotive, technology, and business industries",
+                    "Picturesque city with access to the Alps"
+                ],
+                "livingExpenses": "€14,000/year",
+                "studentFriendly": "Organized and safe with excellent student services",
+                "workOpportunities": "Abundant opportunities in automotive, engineering, and tech sectors",
+                "connectivity": "Efficient public transport with U-Bahn, trams, and buses",
+                "environmentForIndianStudents": "Warm and inclusive, with good support for Indian students",
+                "crimeRate": "Low",
+                "callToAction": "https://www.study-in-munich.de"
+            },
+            {
+                "placeName": "Frankfurt",
+                "image": "cities/frankfurt.jpg",
+                "overview": "Frankfurt is Germany's financial capital, offering top-tier universities and international exposure.",
+                "keyFeatures": [
+                    "Notable institutions like Goethe University and Frankfurt School of Finance",
+                    "Global financial and business hub",
+                    "Rich cultural life and modern infrastructure"
+                ],
+                "livingExpenses": "€13,000/year",
+                "studentFriendly": "Dynamic city with strong support for international students",
+                "workOpportunities": "Opportunities in banking, finance, and IT sectors",
+                "connectivity": "Well-connected with buses, trams, and trains",
+                "environmentForIndianStudents": "Welcoming, with a well-established Indian community",
+                "crimeRate": "Moderate",
+                "callToAction": "https://www.study-in-frankfurt.de"
+            }
+        ],
+        "Level-2": [
+            {
+                "placeName": "Stuttgart",
+                "image": "cities/stuttgart.jpg",
+                "overview": "Stuttgart, the hub of Germany's automotive industry, is home to excellent universities and global companies.",
+                "keyFeatures": [
+                    "Universities like University of Stuttgart",
+                    "Opportunities in engineering, automotive, and robotics",
+                    "Beautiful surroundings with vineyards and parks"
+                ],
+                "livingExpenses": "€11,000/year",
+                "studentFriendly": "Affordable and welcoming for international students",
+                "workOpportunities": "Good opportunities in automotive and engineering fields",
+                "connectivity": "Efficient local transportation system",
+                "environmentForIndianStudents": "Supportive community and cultural connections",
+                "crimeRate": "Low",
+                "callToAction": "https://www.study-in-stuttgart.de"
+            },
+            {
+                "placeName": "Hamburg",
+                "image": "cities/hamburg.jpg",
+                "overview": "Hamburg is a vibrant port city with strong academic institutions and a lively cultural scene.",
+                "keyFeatures": [
+                    "Universities like University of Hamburg and Hamburg University of Technology",
+                    "Focus on business, logistics, and maritime studies",
+                    "Rich history and vibrant nightlife"
+                ],
+                "livingExpenses": "€12,000/year",
+                "studentFriendly": "Multicultural and student-oriented environment",
+                "workOpportunities": "Internships and part-time jobs in logistics, media, and business sectors",
+                "connectivity": "Excellent transport network with U-Bahn and buses",
+                "environmentForIndianStudents": "Friendly with a medium-sized Indian community",
+                "crimeRate": "Moderate",
+                "callToAction": "https://www.study-in-hamburg.de"
+            },
+            {
+                "placeName": "Dresden",
+                "image": "cities/dresden.jpg",
+                "overview": "Dresden is known for its historic architecture, scenic beauty, and advanced research facilities.",
+                "keyFeatures": [
+                    "Notable institutions like TU Dresden",
+                    "Focus on research, engineering, and technology",
+                    "Affordable living with a charming cultural scene"
+                ],
+                "livingExpenses": "€10,000/year",
+                "studentFriendly": "Quiet and academic-focused atmosphere",
+                "workOpportunities": "Opportunities in research and engineering",
+                "connectivity": "Reliable public transport system",
+                "environmentForIndianStudents": "Small but friendly Indian community",
+                "crimeRate": "Low",
+                "callToAction": "https://www.study-in-dresden.de"
+            }
+        ],
+        "Level-3": [
+            {
+                "placeName": "Heidelberg",
+                "image": "cities/heidelberg.jpg",
+                "overview": "Heidelberg, a picturesque city, is famous for its prestigious university and serene atmosphere.",
+                "keyFeatures": [
+                    "Home to Heidelberg University, Germany’s oldest university",
+                    "Focus on life sciences and humanities",
+                    "Beautiful landscapes and historical charm"
+                ],
+                "livingExpenses": "€9,000/year",
+                "studentFriendly": "Small and friendly city for focused academic life",
+                "workOpportunities": "Limited but growing opportunities in research and life sciences",
+                "connectivity": "Compact city with accessible public transport",
+                "environmentForIndianStudents": "Very welcoming, with a small Indian student population",
+                "crimeRate": "Very low",
+                "callToAction": "https://www.uni-heidelberg.de"
+            },
+            {
+                "placeName": "Freiburg",
+                "image": "cities/freiburg.jpg",
+                "overview": "Freiburg is an eco-friendly city with a focus on renewable energy and environmental sciences.",
+                "keyFeatures": [
+                    "Notable for the University of Freiburg",
+                    "Focus on green energy and environmental studies",
+                    "Mild climate and sustainable living"
+                ],
+                "livingExpenses": "€9,500/year",
+                "studentFriendly": "Highly sustainable and student-focused environment",
+                "workOpportunities": "Opportunities in renewable energy and environmental research",
+                "connectivity": "Efficient transport system with trams and buses",
+                "environmentForIndianStudents": "Friendly atmosphere but smaller Indian community",
+                "crimeRate": "Very low",
+                "callToAction": "https://www.uni-freiburg.de"
+            },
+            {
+                "placeName": "Leipzig",
+                "image": "cities/leipzig.jpg",
+                "overview": "Leipzig is a dynamic and affordable city with a rich cultural heritage and growing educational opportunities.",
+                "keyFeatures": [
+                    "Notable institutions like Leipzig University",
+                    "Opportunities in arts, business, and humanities",
+                    "Affordable living with a vibrant cultural scene"
+                ],
+                "livingExpenses": "€8,500/year",
+                "studentFriendly": "Cost-effective and lively for students",
+                "workOpportunities": "Limited but growing opportunities in business and arts",
+                "connectivity": "Reliable and accessible transport system",
+                "environmentForIndianStudents": "Supportive with a small Indian community",
+                "crimeRate": "Low",
+                "callToAction": "https://www.uni-leipzig.de"
+            }
+        ]
+    }
+
+}

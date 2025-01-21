@@ -1,0 +1,158 @@
+{
+  "scholarships": [
+    {
+      "id": "1",
+      "name": "Indian Government Scholarship",
+      "eligibility": "For Indian students pursuing a Master's degree in any field.",
+      "benefits": "Full tuition fee coverage, Monthly stipend, Travel expenses",
+      "deadline": "31st March 2025",
+      "applyLink": "https://www.education.gov.in/scholarships-education-loan-2",
+      "details": {
+        "overview": "A government-funded scholarship for Master's students.",
+        "eligibilityCriteria": [
+          "Indian citizen",
+          "Must have completed undergraduate studies",
+          "Minimum 70% marks in last degree"
+        ],
+        "benefits": [
+          "Full tuition fee",
+          "Monthly stipend of INR 25,000",
+          "Travel and accommodation expenses"
+        ],
+        "applicationProcess": [
+          "Fill out the application form online.",
+          "Submit academic records and financial documents.",
+          "Attend an interview."
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "name": "Tata Scholarship for Master’s",
+      "eligibility": "For students pursuing engineering or technology master's programs.",
+      "benefits": "Full tuition fee coverage, Internship at Tata Group",
+      "deadline": "15th February 2025",
+      "applyLink": "https://www.tata-scholarship.com",
+      "details": {
+        "overview": "A private scholarship from Tata Group aimed at supporting students in technology fields.",
+        "eligibilityCriteria": [
+          "Undergraduate degree in engineering or related fields",
+          "Minimum 75% marks in last degree",
+          "Must agree to an internship with Tata Group"
+        ],
+        "benefits": [
+          "Full tuition fee",
+          "Paid internship with Tata Group"
+        ],
+        "applicationProcess": [
+          "Complete the online application form.",
+          "Submit letters of recommendation.",
+          "Attend a technical interview."
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "name": "Bharati Scholarship Scheme",
+      "eligibility": "For students from economically disadvantaged backgrounds pursuing a Master's degree.",
+      "benefits": "Tuition fee coverage, Textbook allowance, Monthly stipend",
+      "deadline": "30th April 2025",
+      "applyLink": "https://www.bharatischolarship.com",
+      "details": {
+        "overview": "A scholarship for economically disadvantaged Indian students.",
+        "eligibilityCriteria": [
+          "Must belong to a low-income family",
+          "Indian citizen",
+          "Minimum 60% marks in undergraduate studies"
+        ],
+        "benefits": [
+          "Full tuition fee",
+          "INR 10,000 per month stipend",
+          "INR 5,000 for textbooks"
+        ],
+        "applicationProcess": [
+          "Fill out the online form.",
+          "Submit financial documents and academic records.",
+          "Attend an online interview."
+        ]
+      }
+    },
+    {
+      "id": "4",
+      "name": "Narotam Sekhsaria Foundation Scholarship",
+      "eligibility": "For students pursuing postgraduate studies in engineering, technology, and architecture.",
+      "benefits": "Interest-free loan scholarships, Mentoring support",
+      "deadline": "31st May 2025",
+      "applyLink": "https://www.nsfoundation.org",
+      "details": {
+        "overview": "Interest-free loans for students pursuing a master's in engineering and architecture.",
+        "eligibilityCriteria": [
+          "Indian citizen",
+          "Admission to a recognized university in India or abroad",
+          "Good academic performance"
+        ],
+        "benefits": [
+          "Interest-free loan scholarships up to INR 20,00,000",
+          "Mentorship for career development"
+        ],
+        "applicationProcess": [
+          "Complete the online application form.",
+          "Submit academic transcripts, proof of admission, and a research proposal.",
+          "Attend a personal interview."
+        ]
+      }
+    },
+    {
+      "id": "5",
+      "name": "SIIT Scholarship for International Students",
+      "eligibility": "For international students pursuing a master's degree at the Singapore Institute of Technology.",
+      "benefits": "Full tuition fee coverage, Living allowance, Accommodation",
+      "deadline": "1st June 2025",
+      "applyLink": "https://www.siit-scholarship.com",
+      "details": {
+        "overview": "A scholarship for international students to study at Singapore Institute of Technology.",
+        "eligibilityCriteria": [
+          "Non-Singaporean citizen",
+          "Bachelor's degree in relevant fields",
+          "Minimum CGPA of 3.5"
+        ],
+        "benefits": [
+          "Full tuition fee coverage",
+          "SGD 2,000 monthly living allowance",
+          "On-campus accommodation"
+        ],
+        "applicationProcess": [
+          "Apply through the online portal.",
+          "Submit academic records, proof of nationality, and recommendation letters.",
+          "Attend a Skype interview."
+        ]
+      }
+    },
+    {
+      "id": "6",
+      "name": "Chevening Scholarship for Postgraduate Studies",
+      "eligibility": "For Indian students pursuing postgraduate programs in the UK.",
+      "benefits": "Full tuition fee, Travel expenses, Living allowance",
+      "deadline": "15th November 2025",
+      "applyLink": "https://www.chevening.org",
+      "details": {
+        "overview": "A prestigious UK government scholarship for Indian students.",
+        "eligibilityCriteria": [
+          "Indian citizen",
+          "Must have at least two years of work experience",
+          "Must meet specific university entry requirements"
+        ],
+        "benefits": [
+          "Full tuition fee",
+          "Travel expenses",
+          "Living allowance for up to one year"
+        ],
+        "applicationProcess": [
+          "Complete the online application form.",
+          "Submit proof of work experience, academic qualifications, and references.",
+          "Shortlisted applicants will be interviewed."
+        ]
+      }
+    }
+  ]
+}

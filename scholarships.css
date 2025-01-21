@@ -1,0 +1,508 @@
+:root {
+    --primary-bg: #f0d3f7;
+    --primary-text: #120d31;
+    --secondary-bg: #302f4d;
+    --accent: #a57982;
+    --accent-hover: #d16c809a;
+    --card-bg: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+}
+
+.hero-bg {
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff, #00ffff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    position: relative;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .explore-btn {
+    background-color: #a57982;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .explore-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s;
+    z-index: 0;
+  }
+  
+  .explore-btn:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .explore-btn:hover {
+    background-color: #d16c809a;
+    transform: scale(1.05);
+  }
+  
+  .explore-btn:focus {
+    outline: none;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+/* Introduction Section */
+.intro {
+    background-color: var(--primary-bg); /* #f0d3f7 */
+    padding: 40px 20px;
+    text-align: center;
+    margin: 40px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+    font-size: 2.5em;
+    color: var(--primary-text); /* #120d31 */
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+    max-width: 900px;
+    margin: 0 auto 30px;
+}
+
+.scholarship-values {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.value-item {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--card-bg); /* #fff */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.value-item h3 {
+    color: var(--accent); /* #a57982 */
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.value-item p {
+    font-size: 1em;
+    color: #777;
+}
+
+.value-item:hover {
+    background-color: var(--accent-hover); /* #d16c809a */
+}
+
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--primary-bg);
+}
+
+
+.filters select, .filters button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid var(--accent);
+}
+
+.filters button {
+    background-color: var(--accent);
+    color: white;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background-color: var(--accent-hover);
+}
+
+.featured-scholarships {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: var(--secondary-bg);
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+.card .cta {
+    padding: 10px 20px;
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.card .cta:hover {
+    background-color: var(--accent-hover);
+}
+/* Introduction Section - Mobile Responsiveness */
+@media (max-width: 768px) {
+    .intro {
+        padding: 30px 15px;
+    }
+
+    .intro h2 {
+        font-size: 2.2em;
+    }
+
+    .intro p {
+        font-size: 1.1em;
+    }
+
+    .scholarship-values {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .value-item {
+        width: 80%;
+    }
+}
+
+/* Featured Scholarships Section - Mobile Responsiveness */
+@media (max-width: 768px) {
+    .featured-scholarships {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .filters {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filters select, .filters button {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: var(--primary-bg); /* #f0d3f7 */
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials h2 {
+    font-size: 2.8rem;
+    color: var(--primary-text); /* #120d31 */
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px #d16c809a;
+}
+
+.testimonials .subheading {
+    font-size: 1.4rem;
+    color: var(--secondary-text); /* #555 */
+    margin-bottom: 30px;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background-color: var(--card-bg); /* #fff */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 30px 20px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.testimonial-card blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--primary-text);
+    margin-bottom: 15px;
+}
+
+.student-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--accent); /* #a57982 */
+}
+
+.course-details {
+    font-size: 1rem;
+    color: var(--secondary-text); /* #777 */
+}
+
+.cta {
+    margin-top: 40px;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    background-color: var(--accent); /* #a57982 */
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: var(--accent-hover); /* #d16c809a */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .testimonials h2 {
+        font-size: 2.2rem; /* Slightly smaller title for better fit */
+    }
+
+    .testimonials .subheading {
+        font-size: 1.2rem; /* Smaller subheading text */
+    }
+
+    .testimonial-cards {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 20px; /* Adjusted gap for mobile */
+    }
+
+    .testimonial-card {
+        width: 100%; /* Make each card take full width */
+        padding: 20px;
+    }
+
+    .testimonial-img {
+        width: 80px; /* Smaller image size for mobile */
+        height: 80px;
+    }
+
+    .testimonial-card blockquote {
+        font-size: 1rem; /* Slightly smaller text for readability */
+    }
+
+    .student-name {
+        font-size: 1rem; /* Smaller name size */
+    }
+
+    .course-details {
+        font-size: 0.9rem; /* Adjusted course details font size */
+    }
+
+    .cta-btn {
+        padding: 12px 25px; /* Reduced button padding */
+        font-size: 1rem; /* Smaller button text */
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials h2 {
+        font-size: 1.8rem; /* Further reduce title size for very small screens */
+    }
+
+    .testimonials .subheading {
+        font-size: 1rem; /* Adjust subheading for mobile */
+    }
+
+    .testimonial-cards {
+        gap: 15px; /* Reduced gap between stacked cards */
+    }
+
+    .testimonial-card {
+        padding: 15px; /* Smaller padding for mobile */
+    }
+
+    .testimonial-img {
+        width: 70px; /* Even smaller image on very small screens */
+        height: 70px;
+    }
+
+    .testimonial-card blockquote {
+        font-size: 0.95rem; /* Slightly smaller blockquote text */
+    }
+
+    .student-name {
+        font-size: 1rem; /* Adjusted name font size */
+    }
+
+    .course-details {
+        font-size: 0.85rem; /* Adjusted course details font size */
+    }
+
+    .cta-btn {
+        padding: 10px 20px; /* Smaller padding on buttons */
+        font-size: 0.95rem; /* Smaller button text */
+    }
+}
+
+/* FAQs Section */
+.faqs {
+    background-color: var(--primary-bg); /* #f0d3f7 */
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faqs h2 {
+    font-size: 2.8rem;
+    color: var(--primary-text); /* #120d31 */
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px #d16c809a;
+  }
+  
+  .faqs .subheading {
+    font-size: 1.4rem;
+    color: var(--secondary-text); /* #555 */
+    margin-bottom: 30px;
+  }
+  
+  .accordion {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .accordion-item {
+    background-color: var(--card-bg); /* #fff */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .accordion-header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--accent); /* #a57982 */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-header:hover {
+    background-color: var(--accent-hover); /* #d16c809a */
+  }
+  
+  .accordion-content {
+    display: none;
+    padding: 15px;
+    font-size: 1rem;
+    color: var(--secondary-text); /* #777 */
+  }
+  
+  .accordion-toggle {
+    font-size: 1.5rem;
+  }
+  
+  .accordion-item.open .accordion-content {
+    display: block;
+  }
+  
+  .accordion-item.open .accordion-toggle {
+    transform: rotate(45deg);
+  }
+  
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secondary-bg);
+    color: white;
+}

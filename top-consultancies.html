@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top 5 Consultancies</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0d3f7;
+      color: #120d31;
+    }
+    .hero-section {
+      background-color: #302f4d;
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+    .card {
+      background-color: white;
+      display: flex;
+      flex-wrap: wrap;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 400px;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 2rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-content h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .card-content p {
+      margin-bottom: 0.5rem;
+    }
+    .btn {
+      background-color: #a57982;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      margin-top: 1rem;
+      align-self: flex-start;
+    }
+    .btn:hover {
+      background-color: #d16c809a;
+    }
+    
+    @media (max-width: 768px) {
+      .card {
+        flex-direction: column;
+        height: auto;
+      }
+      .card img {
+        width: 100%;
+        height: auto;
+      }
+      .card-content {
+        padding: 1rem;
+      }
+      .card-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .card-content p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+      iframe {
+        width: 100%;
+        height: 200px;
+      }
+      .btn {
+        width: 100%;
+        text-align: center;
+        padding: 0.7rem;
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="sticky top-0 bg-[#302f4d] text-white py-4 shadow-lg z-50">
+    <div class="container mx-auto flex items-center justify-between px-4">
+      <h1 class="text-2xl font-bold" style="font-size:xx-large;">Next Stop: Success!</h1>
+      <!-- Hamburger Menu Button for Mobile -->
+      <button id="menuToggle" class="block md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+      <!-- Desktop Navigation Links -->
+      <nav id="desk" class="hidden md:flex space-x-4">
+        <ul class="flex space-x-4">
+          <li><a href="index.html" class="hover:text-[#b98ea7]">Home</a></li>
+          <li><a href="#scholarships" class="hover:text-[#b98ea7]">Scholarships</a></li>
+          <li><a href="#faqs" class="hover:text-[#b98ea7]">FAQs</a></li>
+          <li><a href="#contact" class="hover:text-[#b98ea7]">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- Mobile Navigation Links -->
+      <nav id="mobileMenu" class="hidden flex-col md:hidden absolute top-16 left-0 w-full bg-[#302f4d] text-white shadow-lg p-4">
+        <ul class="space-y-4">
+          <li><a href="index.html" class="hover:text-[#b98ea7] block">Home</a></li>
+          <li><a href="#scholarships" class="hover:text-[#b98ea7] block">Scholarships</a></li>
+          <li><a href="#faqs" class="hover:text-[#b98ea7] block">FAQs</a></li>
+          <li><a href="#contact" class="hover:text-[#b98ea7] block">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" data-aos="fade-down">
+    <h2 class="text-4xl font-bold mb-4">Top 5 Consultancies in Hyderabad for Masters Abroad</h2>
+    <p class="text-xl">Find trusted consultancies to guide your journey.</p>
+  </section>
+
+  <!-- Consultancies Section -->
+  <section class="container mx-auto py-12 px-4 space-y-8">
+    <!-- Jamboree Education -->
+    <div class="card" data-aos="fade-right">
+      <img src="./assets/jamboree.jpg" alt="Jamboree Education">
+      <div class="card-content">
+        <h3>Jamboree Education</h3>
+        <p class="address">Address: 4th Floor, Suraj Trade Centre, Plot No-28, Hitech City Rd, opp. Cyber Towers, Jaihind Enclave, Madhapur, Hyderabad, Telangana 500081</p>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60898.9662227385!2d78.3059637486328!3d17.4508387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9166e630e2af%3A0xfb22c54e25b9fb0b!2sJamboree%20Education%20%3A-%20Madhapur%20Center!5e0!3m2!1sen!2sin!4v1737134238313!5m2!1sen!2sin" 
+          style="border:0; margin: 10px 0;" allowfullscreen="" loading="lazy">
+        </iframe>
+        <p>Contact: <a href="tel:+914066758300" class="text-blue-600 underline">+91 040-66758300</a></p>
+        <a href="https://www.jamboreeindia.com" target="_blank" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Canam Consultants -->
+    <div class="card" data-aos="fade-left" data-aos-delay="100">
+      <img src="./assets/canam.jpg" alt="Canam Consultants">
+      <div class="card-content">
+        <h3>Canam Consultants</h3>
+        <p>Address: Office No.305, 3rd Floor, Above Cafe Day V V Vintage Boulevard, Raj Bhavan Rd, Somajiguda, Hyderabad, Telangana 500082</p>
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60895.14038423363!2d78.38260466311647!3d17.462285392142125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb974dbb2e90e3%3A0x76e2015adc3a6bc4!2sCanam%20Consultants%20-%20Study%20Abroad!5e0!3m2!1sen!2sin!4v1737134671270!5m2!1sen!2sin" 
+        width="100%" height="150" style="border:0; margin: 10px 0;" allowfullscreen="" loading="lazy">
+      </iframe>
+        <p>Contact: <a href="tel:+919987588783" class="text-blue-600 underline">+91 9987588783</a></p>
+        <a href="https://www.canamgroup.com" target="_blank" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Adept Consultants -->
+    <div class="card" data-aos="fade-right" data-aos-delay="200">
+      <img src="./assets/adept.jpg" alt="Adept Consultants">
+      <div class="card-content">
+        <h3>Adept Consultants</h3>
+        <p>Address: 101, Diamond House, Punjagutta Officers Colony, Punjagutta, Hyderabad, Telangana 500082</p>
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.625234637726!2d78.45057411034396!3d17.429763783395707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97353aaaaaab%3A0x2090aeb08cad09a4!2sAdept%20Overseas%20Education!5e0!3m2!1sen!2sin!4v1737134790895!5m2!1sen!2sin" 
+        width="100%" height="150" style="border:0; margin: 10px 0;" allowfullscreen="" loading="lazy">
+      </iframe>
+        <p>Contact: <a href="tel:+91 9849020025" class="text-blue-600 underline">+91 9849020025</a></p>
+        <a href="https://www.adeptconsultants.com" target="_blank" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <!-- IVY Overseas -->
+    <div class="card" data-aos="fade-left" data-aos-delay="300">
+      <img src="./assets/ivy.jpg" alt="ivy">
+      <div class="card-content">
+        <h3>IVY Overseas</h3>
+        <p>Address: 4th, 5th and 6th Floors, IVY Overseas, Big C Showroom Lane 25/A, beside Shadab Hotel, Sanjeeva Reddy Nagar, Hyderabad, Telangana 500038</p>
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.352081452669!2d78.43569984211605!3d17.442854640920846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90db53d553f7%3A0xa68140d8d4ed7df1!2sIVY%20Overseas!5e0!3m2!1sen!2sin!4v1737135462567!5m2!1sen!2sin" 
+        width="100%" height="150" style="border:0; margin: 10px 0;" allowfullscreen="" loading="lazy">
+      </iframe>
+        <p>Contact: <a href="tel:+91 9703603600" class="text-blue-600 underline">+91 9703603600</a></p>
+        <a href="https://www.ivyoverseas.com/" target="_blank" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <!-- SIEC Education -->
+    <div class="card" data-aos="fade-right" data-aos-delay="400">
+      <img src="./assets/siec.jpg" alt="SIEC Education">
+      <div class="card-content">
+        <h3>SIEC Education</h3>
+        <p>Address: 2nd Floor, Abhinandana Apartments, Opposite SBI, Raj Bhavan Road, Somajiguda, Hyderabad, Telangana 500082</p>
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60906.4216689189!2d78.38006624863279!3d17.428511500000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90bca6ebcea9%3A0x8ac1cf55f9dc3eeb!2sSIEC%20Education%20%7C%20Study%20Abroad%20Consultant%20%7C%20Overseas%20Education%20%7C%20IELTS%2C%20PTE%2C%20TOEFL%20Institute!5e0!3m2!1sen!2sin!4v1737135060714!5m2!1sen!2sin" 
+        width="100%" height="150" style="border:0; margin: 10px 0;" allowfullscreen="" loading="lazy">
+      </iframe>
+        <p>Contact: <a href="tel:+91 9392436000" class="text-blue-600 underline">+91 9392436000</a></p>
+        <a href="https://www.siecindia.com" target="_blank" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#302f4d] text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 Next Stop: Success! All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    AOS.init();
+
+    // GSAP Animation
+    gsap.from("header", {
+      duration: 1,
+      y: -100,
+      ease: "bounce",
+    });
+  </script>
+  
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+  
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden'); // Toggle the visibility of the mobile menu
+    });
+  </script>
+</body>
+</html>

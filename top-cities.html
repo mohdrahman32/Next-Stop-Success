@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Cities</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Add AOS CSS and Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Base Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea; /* Light gray */
+            color: #4a1942; /* Dark purple */
+        }
+        
+        /* Header Styling */
+    header {
+        position: relative;
+        width: 100%;
+        height: 100vh; /* Full screen height */
+        background-image: url('assets/top-cities.png');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #eaeaea; /* Light gray text */
+    }
+
+    header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Black fade overlay */
+        z-index: 1; /* Ensure overlay is below text and buttons */
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin: 0;
+        position: relative; /* Ensure it's above the overlay */
+        z-index: 2;
+    }
+
+    .header-btns {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2; /* Ensure button is above overlay */
+    }
+
+    .header-btns button {
+        background-color: #893168;
+        color: #eaeaea;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .header-btns button:hover {
+        background-color: #4a1942;
+    }
+
+    .scroll-btn {
+        margin-top: 30px;
+        padding: 10px 20px;
+        background-color: #893168;
+        color: #eaeaea;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        z-index: 2; /* Ensure button is above overlay */
+    }
+
+    .scroll-btn:hover {
+        background-color: #4a1942;
+    }
+
+    /* Introduction Section Styling */
+#introduction {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#introduction h2 {
+    color: #893168;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#introduction p {
+    color: #4a1942;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* How It Works Section Styling */
+#how-it-works {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#how-it-works h2 {
+    color: #893168;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.step {
+    background-color: #f0dfdf;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.step h3 {
+    color: #893168;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: #2e1c2b;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+        section#filters {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+            background-color: #4a1942; /* Dark purple */
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        label {
+            color: #eaeaea; /* Light gray */
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        select {
+            padding: 10px;
+            margin-right: 20px;
+            border: 1px solid #2e1c2b; /* Dark maroon */
+            border-radius: 5px;
+            background-color: #050404; /* Very dark gray */
+            color: #eaeaea; /* Light gray */
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #893168; /* Medium purple */
+            color: #eaeaea; /* Light gray */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #4a1942; /* Dark purple */
+        }
+
+        /* City List Styling */
+        #cityList {
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column; /* Ensures cards are positioned vertically */
+            align-items: center;
+        }
+
+        .city-card {
+            background-color: #fff;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 80%; /* Ensure cards take up 80% of the container */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .city-card img {
+            width: 400px;
+            height: 250px; /* Adjust to ensure the image fits vertically without distortion */
+            object-fit: cover; /* Ensure the image maintains its aspect ratio */
+            margin-top: 20px;
+            margin-left: 15px;
+            box-shadow: 2px 2px 10px #893168;
+            border-radius: 10px;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h2 {
+            color: #893168; /* Medium purple */
+            font-size: 1.5rem;
+        }
+
+        .card-content p {
+            color: #2e1c2b; /* Dark maroon */
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        /* Anchor tag styled as a button */
+        .card-content a {
+            display: inline-block;
+            background-color: #893168; /* Medium purple */
+            color: #eaeaea; /* Light gray */
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .card-content a:hover {
+            background-color: #4a1942; /* Dark purple */
+            transform: translateY(-5px); /* Add hover lift effect */
+        }
+
+        /* Hover Effect for Cards */
+        .city-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Fun Facts Section Styling */
+#fun-facts {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#fun-facts h2 {
+    color: #893168;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.fun-facts-container {
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds spacing between the fun fact items */
+}
+
+.fun-fact {
+    background-color: #f0dfdf;
+    padding: 20px;
+    border-radius: 10px;
+    width: 18%; /* Sets width to create a horizontal layout */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.fun-fact h3 {
+    color: #893168;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.fun-fact ul {
+    list-style-type:square;
+    padding: 0;
+}
+
+.fun-fact ul li {
+    color: #2e1c2b;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive Layout for Smaller Screens */
+@media (max-width: 768px) {
+    .fun-facts-container {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .fun-fact {
+        width: 80%; /* Adjust width on smaller screens */
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fun-fact {
+        width: 100%; /* Full width on very small screens */
+    }
+}
+
+
+/* Footer Section Styling */
+#footer {
+    background-color: #4a1942; /* Dark purple */
+    color: #eaeaea; /* Light gray */
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            section#filters {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            select, button {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .city-card {
+                width: 90%; /* Adjust the card width on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .city-card {
+                margin: 10px;
+                width: 100%; /* Full-width on very small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- header section -->
+    <header data-aos="fade-in">
+        <div class="header-btns" data-aos="fade-left" data-aos-delay="300">
+            <button onclick="window.location.href='index.html'"><i class="fas fa-home"></i> Back to Home</button>
+        </div>
+        <h1 data-aos="fade-up">Top Cities for Education</h1>
+        <button class="scroll-btn" onclick="scrollToFilters()" data-aos="fade-up" data-aos-delay="500"><i class="fas fa-arrow-down"></i> Explore Cities</button>
+    </header>
+    
+    <!-- Introduction Section -->
+    <section id="introduction" data-aos="fade-up">
+        <h2>Welcome to Top Cities for Education</h2>
+        <p>This platform helps you explore the best cities across the world for education. Whether you're looking to study in the USA, UK, Canada, Australia, or Germany, we provide detailed information on top cities, living expenses, work opportunities, and more. Choose your preferred country and category to discover the best fit for your educational journey!</p>
+    </section>
+    
+    <!-- How It Works Section -->
+    <section id="how-it-works" data-aos="fade-up">
+        <h2>How It Works</h2>
+        <div class="steps" data-aos="fade-up" data-aos-delay="300">
+            <div class="step" data-aos="flip-left">
+                <h3>Step 1</h3>
+                <p>Select your preferred country and category from the filters above.</p>
+            </div>
+            <div class="step" data-aos="flip-left" data-aos-delay="400">
+                <h3>Step 2</h3>
+                <p>Click on "Explore Cities" to view the top cities based on your selections.</p>
+            </div>
+            <div class="step" data-aos="flip-left" data-aos-delay="500">
+                <h3>Step 3</h3>
+                <p>Explore detailed information on each city, including living expenses, student-friendly features, work opportunities, and more!</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- filter section -->
+    <section id="filters" data-aos="fade-up">
+        <label for="countrySelect">Select Country:</label>
+        <select id="countrySelect">
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+            <option value="Germany">Germany</option>
+        </select>
+
+        <label for="categorySelect">Select Category:</label>
+        <select id="categorySelect">
+            <option value="Level-1">Level-1</option>
+            <option value="Level-2">Level-2</option>
+            <option value="Level-3">Level-3</option>
+        </select>
+
+        <button id="searchButton" data-aos="fade-up" data-aos-delay="600"><i class="fas fa-search"></i> Show Cities</button>
+    </section>
+
+    <section id="cityList" data-aos="fade-up">
+        <!-- Cities will be dynamically displayed here -->
+    </section>
+    
+    <!-- Fun Facts Section -->
+    <section id="fun-facts" data-aos="fade-up">
+        <h2>Fun Facts About Each Country</h2>
+        <div class="fun-facts-container" data-aos="fade-up">
+            <div class="fun-fact">
+                <h3>USA <i class="fas fa-flag-usa"></i></h3>
+                <ul>
+                    <li>USA is home to over 4,000 colleges and universities.</li>
+                    <li>The USA has the world's largest economy.</li>
+                    <li>Americans consume the most coffee in the world.</li>
+                    <li>It's a leader in technological innovations.</li>
+                    <li>USA is known for its diversity, with over 300 languages spoken.</li>
+                </ul>
+            </div>
+            <div class="fun-fact">
+                <h3>UK <i class="fa-solid fa-crown"></i></h3>
+                <ul>
+                    <li>The UK is home to the oldest university in the English-speaking world (Oxford).</li>
+                    <li>London is one of the most visited cities in the world.</li>
+                    <li>The UK is famous for its afternoon tea tradition.</li>
+                    <li>The UK has a rich history in literature and arts.</li>
+                    <li>The driving is on the left side of the road in the UK.</li>
+                </ul>
+            </div>
+            <div class="fun-fact">
+                <h3>Canada <i class="fa-brands fa-canadian-maple-leaf"></i></h3>
+                <ul>
+                    <li>Canada has two official languages: English and French.</li>
+                    <li>Canada is the second-largest country in the world by land area.</li>
+                    <li>It's known for its natural beauty and wildlife.</li>
+                    <li>Canada has a high quality of life and is consistently ranked as one of the happiest countries.</li>
+                    <li>The national sport is ice hockey.</li>
+                </ul>
+            </div>
+            <div class="fun-fact">
+                <h3>Australia <i class="fas fa-tree"></i></h3>
+                <ul>
+                    <li>Australia is the only country that is also a continent.</li>
+                    <li>It has the longest fence in the world, known as the Dingo Fence.</li>
+                    <li>Australia is home to the world’s deadliest animals, including the box jellyfish.</li>
+                    <li>The Great Barrier Reef is one of the largest living structures on Earth.</li>
+                    <li>Australians are known for their love of the outdoors and sports.</li>
+                </ul>
+            </div>
+            <div class="fun-fact">
+                <h3>Germany <i class="fa-solid fa-chess-rook"></i></h3>
+                <ul>
+                    <li>Germany is famous for its rich history in philosophy, music, and engineering.</li>
+                    <li>It has more than 1,500 kinds of sausages.</li>
+                    <li>Germany is home to the world's largest beer festival, Oktoberfest.</li>
+                    <li>Germany has the world's oldest continuously operating university (Heidelberg University).</li>
+                    <li>It’s known for its world-leading automotive industry, home to brands like Mercedes-Benz and BMW.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer id="footer">
+        <p>&copy; 2025 Top Cities for Education. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+    </script>
+    
+
+    <script>
+        // Smooth scroll to the filter section
+        function scrollToFilters() {
+            $('html, body').animate({
+                scrollTop: $('#how-it-works').offset().top
+            }, 1000);
+        }
+
+        $('#searchButton').click(function() {
+            var country = $('#countrySelect').val();
+            var category = $('#categorySelect').val();
+
+            $.getJSON('cities.json', function(data) {
+                var cities = data[country][category];
+                var introMessage = `
+                    <h2>Top 3 ${category} Cities in ${country}</h2>
+                    <p>Here are the top 3 cities based on the ${category} category in ${country}. Explore the city's features, living expenses, work opportunities, and more!</p>
+                `;
+                
+                var cityCards = '';
+                
+                cities.forEach(function(city) {
+                    cityCards += `
+                        <div class="city-card hvr-float-shadow">
+                            <img src="${city.image}" alt="${city.placeName}">
+                            <div class="card-content">
+                                <h2>${city.placeName}</h2>
+                                <p><strong>Overview:</strong> ${city.overview}</p>
+                                <p><strong>Living Expenses:</strong> ${city.livingExpenses}</p>
+                                <p><strong>Student Friendly:</strong> ${city.studentFriendly}</p>
+                                <p><strong>Work Opportunities:</strong> ${city.workOpportunities}</p>
+                                <p><strong>Connectivity:</strong> ${city.connectivity}</p>
+                                <p><strong>Crime Rate:</strong> ${city.crimeRate}</p>
+                                <p><strong>Indian Student Environment:</strong> ${city.environmentForIndianStudents}</p>
+                                <a href="${city.callToAction}" target="_blank">Learn More</a>
+                            </div>
+                        </div>
+                    `;
+                });
+
+                $('#cityList').html(introMessage + cityCards);
+            });
+        });
+    </script>
+</body>
+</html>
